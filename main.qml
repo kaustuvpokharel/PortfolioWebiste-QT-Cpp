@@ -3,7 +3,7 @@ import QtQuick.Controls
 
 Window {
     width: 1920
-    height: 1080
+    height: 2000
     visible: true
     title: qsTr("PortFolio")
 
