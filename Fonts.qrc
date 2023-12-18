@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file alias="Nautigal">TheNautigal-Bold.ttf</file>
+        <file alias="Philo">Philosopher-Regular.ttf</file>
+        <file alias="PhiloBold">Philosopher-Bold.ttf</file>
+    </qresource>
+</RCC>
