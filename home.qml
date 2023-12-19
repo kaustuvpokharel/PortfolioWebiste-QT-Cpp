@@ -339,13 +339,25 @@ Page
             anchors.right: parent.right
             anchors.rightMargin: 80
             spacing: -15
+
+            Image {
+                id: stars
+                source: "qrc:/stars"
+                Layout.alignment: Qt.AlignRight | Qt.AlignTop
+                Layout.preferredWidth: 150
+                // Layout.preferredHeight: imageContainer.height
+                fillMode: Image.PreserveAspectFit
+                y: -100
+            }
+
             Text
             {
                 text: "5 Years"
                 color: "#313131"
                 font.family: nautigal.name
                 font.styleName: "semiBold"
-                font.pixelSize: 80
+                font.pixelSize: 100
+                Layout.alignment: Qt.AlignRight
             }
             Text
             {
@@ -354,7 +366,7 @@ Page
                 font.family: "Poppins"
                 font.styleName: "Medium"
                 font.pixelSize: 20
-                anchors.right: parent.right
+                Layout.alignment: Qt.AlignRight
             }
 
         }
