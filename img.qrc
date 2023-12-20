@@ -3,5 +3,7 @@
         <file alias="kastuv">IMG_0149.png</file>
         <file alias="stars">Asset 1.svg</file>
         <file alias="pj1">pj1</file>
+        <file alias="greenCic">greeenCic</file>
+        <file alias="grayCic">grayCic</file>
     </qresource>
 </RCC>

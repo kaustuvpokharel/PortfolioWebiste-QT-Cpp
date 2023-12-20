@@ -664,7 +664,8 @@ Page
             anchors.top: projectsRect.bottom
             width: parent.width
 
-            Text {
+            Text
+            {
                 id: myWorkExtext
                 text: qsTr("<html>My Work <font color='#628935'>Experience</font></html>")
                 Layout.alignment: Qt.AlignHCenter | Qt.AlignTop
@@ -672,6 +673,120 @@ Page
                 font.family: philo.name
                 font.pixelSize: 50
                 color: "#313131"
+            }
+
+            RowLayout
+            {
+                id: exp1
+                Layout.alignment: Qt.AlignTop | Qt.AlignLeft
+                Layout.topMargin: 50
+                Layout.leftMargin: 50
+
+                Text
+                {
+                    id: exp1text
+                    text: "Bell Canada - Ottawa"
+                    font.family: philo.name
+                    font.pixelSize: 30
+
+                    Text
+                    {
+                        text: qsTr("May 2023 - July 2023")
+                        font.family: "Poppins"
+                        font.styleName: "Medium"
+                        font.pixelSize: 20
+                        color: "#313131"
+                        anchors.top: parent.bottom
+                        opacity: 0.7
+                    }
+                }
+
+                Image {
+                    source: "qrc:/greenCic"
+                    sourceSize: Qt.size(50,50)
+                    Layout.alignment: Qt.AlignLeft
+                    Layout.leftMargin: 300
+                    Layout.topMargin: 25
+                    fillMode: Image.PreserveAspectFit
+                }
+
+                Text
+                {
+                    id: exp1Dis
+                    text: "Software Developer Intern"
+                    font.family: philo.name
+                    font.pixelSize: 30
+                    Layout.alignment: Qt.AlignLeft
+                    Layout.leftMargin: 50
+
+                    Text
+                    {
+                        text: qsTr("Incoming Software Developer Intern for the coming summer 2024")
+                        font.family: "Poppins"
+                        font.styleName: "Medium"
+                        font.pixelSize: 20
+                        color: "#313131"
+                        anchors.top: parent.bottom
+                        opacity: 0.7
+                    }
+                }
+            }
+
+            RowLayout
+            {
+                id: exp2
+                Layout.alignment: Qt.AlignTop | Qt.AlignLeft
+                Layout.topMargin: 50
+                Layout.leftMargin: 50
+
+                Text
+                {
+                    id: exp2text
+                    text: "Seneca Science & Technology Guild"
+                    font.family: philo.name
+                    font.pixelSize: 30
+
+                    Text
+                    {
+                        text: qsTr("Jan 2023 - Present")
+                        font.family: "Poppins"
+                        font.styleName: "Medium"
+                        font.pixelSize: 20
+                        color: "#313131"
+                        anchors.top: parent.bottom
+                        opacity: 0.7
+                    }
+                }
+
+                Image {
+                    source: "qrc:/grayCic"
+                    sourceSize: Qt.size(50,50)
+                    Layout.alignment: Qt.AlignLeft
+                    Layout.leftMargin: 110
+                    Layout.topMargin: 25
+                    fillMode: Image.PreserveAspectFit
+                }
+
+                Text
+                {
+                    id: exp2Dis
+                    text: "President"
+                    font.family: philo.name
+                    font.pixelSize: 30
+                    Layout.alignment: Qt.AlignLeft
+                    Layout.leftMargin: 50
+
+                    Text
+                    {
+                        text: qsTr("An innovative student club of 130+ members, representing the college\n at tech competitions, fostering collaboration, and building industry\n relationships.")
+                        font.family: "Poppins"
+                        font.styleName: "Medium"
+                        font.pixelSize: 20
+                        color: "#313131"
+                        anchors.top: parent.bottom
+                        opacity: 0.7
+                    }
+                }
             }
         }
     }
