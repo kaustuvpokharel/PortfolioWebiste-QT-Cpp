@@ -335,7 +335,7 @@ Page
         {
             id: introSide
             anchors.top: label2Text.bottom
-            anchors.topMargin: 200
+            anchors.topMargin: 160
             anchors.right: parent.right
             anchors.rightMargin: 80
             spacing: -15
@@ -344,7 +344,8 @@ Page
                 id: stars
                 source: "qrc:/stars"
                 Layout.alignment: Qt.AlignRight | Qt.AlignTop
-                Layout.preferredWidth: 150
+                Layout.bottomMargin: -30
+                Layout.preferredWidth: 175
                 // Layout.preferredHeight: imageContainer.height
                 fillMode: Image.PreserveAspectFit
             }
@@ -353,9 +354,9 @@ Page
             {
                 text: "5 Years"
                 color: "#313131"
-                font.family: philo.name
+                font.family: nautigal.name
                 font.styleName: "semiBold"
-                font.pixelSize: 50
+                font.pixelSize: 80
                 Layout.alignment: Qt.AlignRight
             }
             Text
@@ -430,6 +431,7 @@ Page
                 id: mypshow
                 anchors.top: myp.bottom
                 anchors.topMargin: 20
+                spacing: 20
 
                 Rectangle
                 {
@@ -441,17 +443,235 @@ Page
                     Layout.alignment: Qt.AlignLeft | Qt.AlignTop
                     Layout.leftMargin: 50
                     Layout.topMargin: 80
+                    Rectangle
+                    {
+                        id: linepj1
+                        height:1
+                        width: parent.width
+                        color: "#FFFFFF"
+                        anchors.horizontalCenter: parent.horizontalCenter
+                        anchors.top: pj1.top
+                        anchors.topMargin: 120
+                        opacity: 0.3
+                    }
+                    Text
+                    {
+                        text: "FIREWALL.02"
+                        font.family: philo.name
+                        font.pixelSize: 30
+                        color: "#FFFFFF"
+                        anchors.bottom: linepj1.top
+                        anchors.bottomMargin: 40
+                        anchors.left: pj1.left
+                        anchors.leftMargin: 25
+                    }
+
+                    Rectangle
+                    {
+                        width: 380
+                        height: 300
+                        radius: 30
+                        anchors.bottom: imgPj1.bottom
+                        anchors.horizontalCenter: imgPj1.horizontalCenter
+                        anchors.bottomMargin: 40
+                        color: "#666666"
+                    }
+                    Rectangle
+                    {
+
+                        width: 400
+                        height: 300
+                        radius: 30
+                        anchors.bottom: imgPj1.bottom
+                        anchors.horizontalCenter: imgPj1.horizontalCenter
+                        anchors.bottomMargin: 20
+                        color: "#999999"
+                    }
+
 
                     Rectangle
                     {
                         id: imgPj1
                         width: 420
-                        height: 370
+                        height: 300
                         radius: 30
                         anchors.bottom: pj1.bottom
+
+                        Image {
+                            id: img1
+                            source: "qrc:/pj1"
+                            anchors.fill: imgPj1
+                            fillMode: Image.PreserveAspectFit
+                        }
                     }
                 }
 
+                Rectangle
+                {
+                    id: pj2
+                    height: 520
+                    width: 420
+                    color: "#333333"//"#628935"
+                    radius: 30
+                    Layout.alignment: Qt.AlignLeft | Qt.AlignTop
+                    Layout.leftMargin: 50
+                    Layout.topMargin: 80
+                    Rectangle
+                    {
+                        id: linepj2
+                        height:1
+                        width: parent.width
+                        color: "#FFFFFF"
+                        anchors.horizontalCenter: parent.horizontalCenter
+                        anchors.top: pj2.top
+                        anchors.topMargin: 120
+                        opacity: 0.3
+                    }
+                    Text
+                    {
+                        text: "FIREWALL.02"
+                        font.family: philo.name
+                        font.pixelSize: 30
+                        color: "#FFFFFF"
+                        anchors.bottom: linepj2.top
+                        anchors.bottomMargin: 40
+                        anchors.left: pj2.left
+                        anchors.leftMargin: 25
+                    }
+
+                    Rectangle
+                    {
+                        width: 380
+                        height: 300
+                        radius: 30
+                        anchors.bottom: imgPj2.bottom
+                        anchors.horizontalCenter: imgPj2.horizontalCenter
+                        anchors.bottomMargin: 40
+                        color: "#FFFFFF"
+                        opacity: 0.5
+
+                    }
+                    Rectangle
+                    {
+
+                        width: 400
+                        height: 300
+                        radius: 30
+                        anchors.bottom: imgPj2.bottom
+                        anchors.horizontalCenter: imgPj2.horizontalCenter
+                        anchors.bottomMargin: 20
+                        color: "#FFFFFF"
+                        opacity: 0.3
+                    }
+
+
+                    Rectangle
+                    {
+                        id: imgPj2
+                        width: 420
+                        height: 300
+                        radius: 30
+                        anchors.bottom: pj2.bottom
+
+                        Image {
+                            id: img2
+                            source: "qrc:/pj1"
+                            anchors.fill: imgPj2
+                            fillMode: Image.PreserveAspectFit
+                        }
+                    }
+                }
+
+                Rectangle
+                {
+                    id: pj3
+                    height: 520
+                    width: 420
+                    color: "#444444"
+                    radius: 30
+                    Layout.alignment: Qt.AlignLeft | Qt.AlignTop
+                    Layout.leftMargin: 50
+                    Layout.topMargin: 80
+                    Rectangle
+                    {
+                        id: linepj3
+                        height:1
+                        width: parent.width
+                        color: "#FFFFFF"
+                        anchors.horizontalCenter: parent.horizontalCenter
+                        anchors.top: pj3.top
+                        anchors.topMargin: 120
+                        opacity: 0.3
+                    }
+                    Text
+                    {
+                        text: "FIREWALL.02"
+                        font.family: philo.name
+                        font.pixelSize: 30
+                        color: "#FFFFFF"
+                        anchors.bottom: linepj3.top
+                        anchors.bottomMargin: 40
+                        anchors.left: pj3.left
+                        anchors.leftMargin: 25
+                    }
+
+                    Rectangle
+                    {
+                        width: 380
+                        height: 300
+                        radius: 30
+                        anchors.bottom: imgPj3.bottom
+                        anchors.horizontalCenter: imgPj3.horizontalCenter
+                        anchors.bottomMargin: 40
+                        color: "#666666"
+                    }
+                    Rectangle
+                    {
+
+                        width: 400
+                        height: 300
+                        radius: 30
+                        anchors.bottom: imgPj3.bottom
+                        anchors.horizontalCenter: imgPj3.horizontalCenter
+                        anchors.bottomMargin: 20
+                        color: "#999999"
+                    }
+
+
+                    Rectangle
+                    {
+                        id: imgPj3
+                        width: 420
+                        height: 300
+                        radius: 30
+                        anchors.bottom: pj3.bottom
+
+                        Image {
+                            id: img3
+                            source: "qrc:/pj1"
+                            anchors.fill: imgPj3
+                            fillMode: Image.PreserveAspectFit
+                        }
+                    }
+                }
+
+            }
+        }
+
+        ColumnLayout
+        {
+            id:myWorkEx
+            anchors.top: projectsRect.bottom
+            width: parent.width
+
+            Text {
+                id: myWorkExtext
+                text: qsTr("<html>My Work <font color='#628935'>Experience</font></html>")
+                Layout.alignment: Qt.AlignHCenter | Qt.AlignTop
+                Layout.topMargin: 100
+                font.family: philo.name
+                font.pixelSize: 50
+                color: "#313131"
             }
         }
     }
