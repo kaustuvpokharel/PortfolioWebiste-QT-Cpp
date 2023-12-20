@@ -918,5 +918,31 @@ Page
                 }
             }
         }
+    Rectangle
+    {
+        width: parent.width
+        height: 130
+        color: "#628935"
+        radius: 70
+        anchors.top: myWorkEx.bottom
+        anchors.horizontalCenter: parent.horizontalCenter
+        anchors.topMargin: 200
+
+        Rectangle
+        {
+            width: parent.width
+            height: 90
+            color: "#FFFFFF"
+            anchors.centerIn: parent
+            rotation: -2
+            Text {
+                text: qsTr("C          C++         Python          JavaScript        SQL         QT/QML          Blender3D         Adobe Creative")
+                font.family: philo.name
+                font.pixelSize: 34
+                color: "#313131"
+                anchors.centerIn: parent
+            }
+        }
+    }
     }
 }
