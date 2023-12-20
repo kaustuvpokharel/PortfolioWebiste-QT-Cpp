@@ -213,10 +213,10 @@ Page
             text: qsTr("<html>I'm <font color='#628935'; text-align: center>Kaustuv</font>,<br />Software Engineering Student</html>")
             FontLoader
             {
-                id: philosopher
+                id: philo
                 source: "qrc:/PhiloBold"
             }
-            font.family: philosopher.name
+            font.family: philo.name
             font.pixelSize: 70
             color: "#313131"
 
@@ -347,16 +347,15 @@ Page
                 Layout.preferredWidth: 150
                 // Layout.preferredHeight: imageContainer.height
                 fillMode: Image.PreserveAspectFit
-                y: -100
             }
 
             Text
             {
                 text: "5 Years"
                 color: "#313131"
-                font.family: nautigal.name
+                font.family: philo.name
                 font.styleName: "semiBold"
-                font.pixelSize: 100
+                font.pixelSize: 50
                 Layout.alignment: Qt.AlignRight
             }
             Text
@@ -375,13 +374,85 @@ Page
         {
             id: projectsRect
             width: parent.width
-            height:700
+            height: 850
             color: "#313131"
             radius: 50
 
             anchors.top: cicImg.bottom
             anchors.topMargin: -400
 
+            RowLayout
+            {
+                id: myp
+                anchors.top: parent.top
+                anchors.topMargin: 30
+                spacing: 350
+
+                Text
+                {
+                    text: qsTr("<html>My <font color='#628935'>Project</font></html>")
+                    font.family: philo.name
+                    font.pixelSize: 50
+                    color: "#FFFFFF"
+                    Layout.alignment: Qt.AlignLeft | Qt.AlignTop
+                    Layout.leftMargin: 50
+                    Layout.topMargin: 70
+                }
+
+                Text
+                {
+                    text: qsTr("<html>Browse through a concise showcase of my C++, Python, and hackathon projects,<br />demonstrating technical expertise and innovation.</html>")
+                    font.family: "Poppins"
+                    font.styleName: "Light"
+                    font.pixelSize: 20
+                    color: "#FFFFFF"
+                    opacity: 0.7
+                    Layout.alignment: Qt.AlignRight | Qt.AlignTop
+                    Layout.rightMargin: 70
+                    Layout.topMargin: 60
+                }
+            }
+
+            Rectangle
+            {
+                id: line1
+                height:1
+                width: 1400
+                color: "#FFFFFF"
+                anchors.horizontalCenter: parent.horizontalCenter
+                anchors.top: myp.bottom
+                anchors.topMargin: 30
+                opacity: 0.3
+            }
+
+            RowLayout
+            {
+                id: mypshow
+                anchors.top: myp.bottom
+                anchors.topMargin: 20
+
+                Rectangle
+                {
+                    id: pj1
+                    height: 520
+                    width: 420
+                    color: "#444444"
+                    radius: 30
+                    Layout.alignment: Qt.AlignLeft | Qt.AlignTop
+                    Layout.leftMargin: 50
+                    Layout.topMargin: 80
+
+                    Rectangle
+                    {
+                        id: imgPj1
+                        width: 420
+                        height: 370
+                        radius: 30
+                        anchors.bottom: pj1.bottom
+                    }
+                }
+
+            }
         }
     }
 }
