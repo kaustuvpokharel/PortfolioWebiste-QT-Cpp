@@ -12,7 +12,7 @@ Page
     {
         anchors.fill: parent
         contentWidth: parent.width // Adjust contentWidth based on your needs
-        contentHeight: Math.max(3500, parent.height)
+        contentHeight: Math.max(5000, parent.height)
 
 
         Rectangle
@@ -474,7 +474,8 @@ Page
                         anchors.bottom: imgPj1.bottom
                         anchors.horizontalCenter: imgPj1.horizontalCenter
                         anchors.bottomMargin: 40
-                        color: "#666666"
+                        color: "#FFFFFF"
+                        opacity: 0.5
                     }
                     Rectangle
                     {
@@ -485,7 +486,8 @@ Page
                         anchors.bottom: imgPj1.bottom
                         anchors.horizontalCenter: imgPj1.horizontalCenter
                         anchors.bottomMargin: 20
-                        color: "#999999"
+                        color: "#FFFFFF"
+                        opacity: 0.3
                     }
 
 
@@ -511,7 +513,7 @@ Page
                     id: pj2
                     height: 520
                     width: 420
-                    color: "#333333"//"#628935"
+                    color: "#444444"//"#628935"
                     radius: 30
                     Layout.alignment: Qt.AlignLeft | Qt.AlignTop
                     Layout.leftMargin: 50
@@ -623,7 +625,8 @@ Page
                         anchors.bottom: imgPj3.bottom
                         anchors.horizontalCenter: imgPj3.horizontalCenter
                         anchors.bottomMargin: 40
-                        color: "#666666"
+                        color: "#FFFFFF"
+                        opacity: 0.5
                     }
                     Rectangle
                     {
@@ -634,7 +637,8 @@ Page
                         anchors.bottom: imgPj3.bottom
                         anchors.horizontalCenter: imgPj3.horizontalCenter
                         anchors.bottomMargin: 20
-                        color: "#999999"
+                        color: "#FFFFFF"
+                        opacity: 0.3
                     }
 
 
@@ -657,12 +661,24 @@ Page
 
             }
         }
+        // Rectangle
+        // {
+        //     id: line2
+        //     height:550
+        //     width: 1
+        //     color: "#313131"
+        //     anchors.top: myWorkEx.top
+        //     anchors.topMargin: 250
+        //     anchors.right: myWorkEx.right
+        //     anchors.rightMargin: 852
+        // }
 
         ColumnLayout
         {
             id:myWorkEx
             anchors.top: projectsRect.bottom
             width: parent.width
+            spacing: 50
 
             Text
             {
@@ -679,7 +695,6 @@ Page
             {
                 id: exp1
                 Layout.alignment: Qt.AlignTop | Qt.AlignLeft
-                Layout.topMargin: 50
                 Layout.leftMargin: 50
 
                 Text
@@ -691,7 +706,7 @@ Page
 
                     Text
                     {
-                        text: qsTr("May 2023 - July 2023")
+                        text: qsTr("May 2024 - July 2024")
                         font.family: "Poppins"
                         font.styleName: "Medium"
                         font.pixelSize: 20
@@ -702,6 +717,7 @@ Page
                 }
 
                 Image {
+                    id: imgCIC
                     source: "qrc:/greenCic"
                     sourceSize: Qt.size(50,50)
                     Layout.alignment: Qt.AlignLeft
@@ -779,6 +795,119 @@ Page
                     Text
                     {
                         text: qsTr("An innovative student club of 130+ members, representing the college\n at tech competitions, fostering collaboration, and building industry\n relationships.")
+                        font.family: "Poppins"
+                        font.styleName: "Medium"
+                        font.pixelSize: 20
+                        color: "#313131"
+                        anchors.top: parent.bottom
+                        opacity: 0.7
+                    }
+                }
+            }
+            RowLayout
+            {
+                id: exp3
+                Layout.alignment: Qt.AlignTop | Qt.AlignLeft
+                Layout.topMargin: 50
+                Layout.leftMargin: 50
+
+                Text
+                {
+                    id: exp3text
+                    text: "SunBi Holdings Pvt. Ltd. - Nepal"
+                    font.family: philo.name
+                    font.pixelSize: 30
+
+                    Text
+                    {
+                        text: qsTr("Jan 2021 - Aug 2022")
+                        font.family: "Poppins"
+                        font.styleName: "Medium"
+                        font.pixelSize: 20
+                        color: "#313131"
+                        anchors.top: parent.bottom
+                        opacity: 0.7
+                    }
+                }
+
+                Image {
+                    source: "qrc:/greenCic"
+                    sourceSize: Qt.size(50,50)
+                    Layout.alignment: Qt.AlignLeft
+                    Layout.leftMargin: 158
+                    Layout.topMargin: 25
+                    fillMode: Image.PreserveAspectFit
+                }
+
+                Text
+                {
+                    id: exp3Dis
+                    text: "3D Artist/Motion Graphics Artist"
+                    font.family: philo.name
+                    font.pixelSize: 30
+                    Layout.alignment: Qt.AlignLeft
+                    Layout.leftMargin: 50
+
+                    Text
+                    {
+                        text: qsTr("Produce dynamic motion graphics, 3D renders, and Lottie files for\nonline applications, managing aspects like lighting, shading,\nmaterials, and textures. Create vector and raster graphics")
+                        font.family: "Poppins"
+                        font.styleName: "Medium"
+                        font.pixelSize: 20
+                        color: "#313131"
+                        anchors.top: parent.bottom
+                        opacity: 0.7
+                    }
+                }
+            }
+
+            RowLayout
+            {
+                id: exp4
+                Layout.alignment: Qt.AlignTop | Qt.AlignLeft
+                Layout.topMargin: 50
+                Layout.leftMargin: 50
+
+                Text
+                {
+                    id: exp4text
+                    text: "Trinity Science & Technology Guild"
+                    font.family: philo.name
+                    font.pixelSize: 30
+
+                    Text
+                    {
+                        text: qsTr("Jan 2020 - Jan 2022")
+                        font.family: "Poppins"
+                        font.styleName: "Medium"
+                        font.pixelSize: 20
+                        color: "#313131"
+                        anchors.top: parent.bottom
+                        opacity: 0.7
+                    }
+                }
+
+                Image {
+                    source: "qrc:/grayCic"
+                    sourceSize: Qt.size(50,50)
+                    Layout.alignment: Qt.AlignLeft
+                    Layout.leftMargin: 118
+                    Layout.topMargin: 25
+                    fillMode: Image.PreserveAspectFit
+                }
+
+                Text
+                {
+                    id: exp4Dis
+                    text: "Mentor/Advisor"
+                    font.family: philo.name
+                    font.pixelSize: 30
+                    Layout.alignment: Qt.AlignLeft
+                    Layout.leftMargin: 50
+
+                    Text
+                    {
+                        text: qsTr("Guide and mentor juniors while recruiting qualified robotics and tech\nenthusiasts from the college.")
                         font.family: "Poppins"
                         font.styleName: "Medium"
                         font.pixelSize: 20
