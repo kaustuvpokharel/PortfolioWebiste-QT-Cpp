@@ -146,7 +146,6 @@ Page
                         resumeN.font.styleName = "Light";
                     }
                 }
-
             }
 
             Text
@@ -223,11 +222,13 @@ Page
                 onEntered:
                 {
                     label1.color = "#628935";
+                    label1.border.color = "#628935";
                     label1Text.color = "#FFFFFF";
                 }
                 onExited:
                 {
                     label1.color = "Transparent"
+                    label1.border.color = "#313131";
                     label1Text.color = "#628935";
 
                 }
@@ -297,17 +298,40 @@ Page
                     id: resume
                     Layout.preferredHeight: 60
                     Layout.preferredWidth: 190
-                    color: "#628935"
+                    border.color: "#313131"
+                    border.width: 2
+                    color: "transparent"
+
                     radius: 60
 
                     Text
-                    {
+                    {   id: resText
                         text: qsTr("Resume")
                         font.family: "Poppins"
                         font.styleName: "Medium"
                         font.pixelSize: 25
-                        color: "#FFFFFF"
+                        color: "#313131"
                         anchors.centerIn: parent
+                    }
+
+                    MouseArea
+                    {
+                        anchors.fill: parent
+                        hoverEnabled: true
+
+                        onEntered:
+                        {
+                            resume.color = "#628935";
+                            resume.border.color = "#628935";
+                            resText.color = "#FFFFFF";
+                        }
+                        onExited:
+                        {
+                            resume.color = "Transparent";
+                            resume.border.color = "#313131";
+                            resText.color = "#313131";
+                        }
+
                     }
                 }
                 Rectangle
@@ -321,12 +345,33 @@ Page
 
                     Text
                     {
+                        id: mailtext
                         text: qsTr("Mail me")
                         font.family: "Poppins"
                         font.styleName: "Medium"
                         font.pixelSize: 25
                         color: "#313131"
                         anchors.centerIn: parent
+                    }
+
+                    MouseArea
+                    {
+                        anchors.fill: parent
+                        hoverEnabled: true
+
+                        onEntered:
+                        {
+                            mailMe.color = "#628935";
+                            mailMe.border.color = "#628935";
+                            mailtext.color = "#FFFFFF";
+                        }
+                        onExited:
+                        {
+                            mailMe.color = "Transparent";
+                            mailMe.border.color = "#313131";
+                            mailtext.color = "#313131";
+                        }
+
                     }
                 }
             }
@@ -533,6 +578,22 @@ Page
                             fillMode: Image.PreserveAspectFit
                         }
                     }
+
+                    MouseArea
+                    {
+                        anchors.fill: parent
+                        hoverEnabled: true
+
+                        onEntered:
+                        {
+                            pj1.color = "#628935";
+                        }
+                        onExited:
+                        {
+                            pj1.color = "#444444";
+                        }
+
+                    }
                 }
 
                 Rectangle
@@ -609,6 +670,22 @@ Page
                             fillMode: Image.PreserveAspectFit
                         }
                     }
+
+                    MouseArea
+                    {
+                        anchors.fill: parent
+                        hoverEnabled: true
+
+                        onEntered:
+                        {
+                            pj2.color = "#628935";
+                        }
+                        onExited:
+                        {
+                            pj2.color = "#444444";
+                        }
+
+                    }
                 }
 
                 Rectangle
@@ -683,6 +760,22 @@ Page
                             anchors.fill: imgPj3
                             fillMode: Image.PreserveAspectFit
                         }
+                    }
+
+                    MouseArea
+                    {
+                        anchors.fill: parent
+                        hoverEnabled: true
+
+                        onEntered:
+                        {
+                            pj3.color = "#628935";
+                        }
+                        onExited:
+                        {
+                            pj3.color = "#444444";
+                        }
+
                     }
                 }
 
