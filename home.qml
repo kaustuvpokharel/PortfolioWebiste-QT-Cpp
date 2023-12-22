@@ -152,7 +152,7 @@ Page
             Text
             {
                 id: projectN
-                text: "Resume"
+                text: "Project"
                 color: "#FFFFFF"
                 anchors.verticalCenter: parent.verticalCenter
                 font.family: "poppins"
@@ -196,7 +196,8 @@ Page
             anchors.horizontalCenter: parent.horizontalCenter
             radius: 30
 
-            Text {
+            Text
+            {
                 id: label1Text
                 text: qsTr("<html>Hello, this website is built on <b>C++</b></html>")
                 font.family: "poppins"
@@ -204,6 +205,32 @@ Page
                 font.pixelSize: 15
                 color: "#313131"
                 anchors.centerIn: parent
+            }
+
+            MouseArea
+            {
+                anchors.fill: parent
+                acceptedButtons: Qt.LeftButton
+                cursorShape: Qt.PointingHandCursor
+                propagateComposedEvents: true
+                hoverEnabled: true
+                onClicked:
+                {
+                    console.log("Clicked Cpp, opening github");
+                    Qt.openUrlExternally("https://github.com/kastuv/PortfolioWebiste-QT-Cpp")
+                }
+
+                onEntered:
+                {
+                    label1.color = "#628935";
+                    label1Text.color = "#FFFFFF";
+                }
+                onExited:
+                {
+                    label1.color = "Transparent"
+                    label1Text.color = "#628935";
+
+                }
             }
         }
 
