@@ -18,6 +18,9 @@ qt_add_qml_module(appWEBSITE
     VERSION 1.0
     QML_FILES main.qml
     QML_FILES home.qml
+    QML_FILES about.qml
+    QML_FILES resume.qml
+    QML_FILES project.qml
     RESOURCES Fonts.qrc
     RESOURCES img.qrc
 )
