@@ -45,6 +45,8 @@ Page
                     anchors.fill: parent
                     propagateComposedEvents: true
                     hoverEnabled: true
+                    acceptedButtons: Qt.LeftButton
+                    cursorShape: Qt.PointingHandCursor
 
                     //just to check if the home button is clicked
                     onClicked: console.log("Home button clicked: Test case")
@@ -80,6 +82,8 @@ Page
                     anchors.fill: parent
                     propagateComposedEvents: true
                     hoverEnabled: true
+                    acceptedButtons: Qt.LeftButton
+                    cursorShape: Qt.PointingHandCursor
 
                     //just to check if the home button is clicked
                     onClicked: console.log("About button clicked: Test case")
@@ -132,6 +136,8 @@ Page
                     anchors.fill: parent
                     propagateComposedEvents: true
                     hoverEnabled: true
+                    acceptedButtons: Qt.LeftButton
+                    cursorShape: Qt.PointingHandCursor
 
                     //just to check if the home button is clicked
                     onClicked: console.log("Resume button clicked: Test case")
@@ -166,6 +172,8 @@ Page
                     anchors.fill: parent
                     propagateComposedEvents: true
                     hoverEnabled: true
+                    acceptedButtons: Qt.LeftButton
+                    cursorShape: Qt.PointingHandCursor
 
                     //just to check if the home button is clicked
                     onClicked: console.log("Project button clicked: Test case")
@@ -283,7 +291,7 @@ Page
             id: buttonsImg
             height: 70
             width: 400
-            color: "#FFFFFF"
+            color: "Transparent"
             radius: 70
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.verticalCenter: cicImg.verticalCenter
@@ -298,7 +306,7 @@ Page
                     id: resume
                     Layout.preferredHeight: 60
                     Layout.preferredWidth: 190
-                    border.color: "#313131"
+                    border.color: "#FFFFFF"
                     border.width: 2
                     color: "transparent"
 
@@ -310,7 +318,7 @@ Page
                         font.family: "Poppins"
                         font.styleName: "Medium"
                         font.pixelSize: 25
-                        color: "#313131"
+                        color: "#FFFFFF"
                         anchors.centerIn: parent
                     }
 
@@ -328,8 +336,8 @@ Page
                         onExited:
                         {
                             resume.color = "Transparent";
-                            resume.border.color = "#313131";
-                            resText.color = "#313131";
+                            resume.border.color = "#FFFFFF";
+                            resText.color = "#FFFFFF";
                         }
 
                     }
@@ -339,9 +347,10 @@ Page
                     id: mailMe
                     Layout.preferredHeight: 60
                     Layout.preferredWidth: 190
-                    border.color: "#313131"
+                    border.color: "#FFFFFF"
                     border.width: 2
                     radius: 60
+                    color: "Transparent"
 
                     Text
                     {
@@ -350,7 +359,7 @@ Page
                         font.family: "Poppins"
                         font.styleName: "Medium"
                         font.pixelSize: 25
-                        color: "#313131"
+                        color: "#FFFFFF"
                         anchors.centerIn: parent
                     }
 
@@ -368,8 +377,8 @@ Page
                         onExited:
                         {
                             mailMe.color = "Transparent";
-                            mailMe.border.color = "#313131";
-                            mailtext.color = "#313131";
+                            mailMe.border.color = "#FFFFFF";
+                            mailtext.color = "#FFFFFF";
                         }
 
                     }
@@ -1165,14 +1174,224 @@ Page
                             color: "#FFFFFF"
                             font.family: "Poppins"
                             font.styleName: "Light"
-                            font.pixelSize: 20
+                            font.pixelSize: 17
                             opacity: 0.7
                             Layout.alignment: Qt.AlignLeft | Qt.AlignTop
                             Layout.leftMargin: 50
                             Layout.topMargin: 10
                         }
 
+                        RowLayout
+                        {
+                            id: socialMedia
+
+                            Layout.alignment: Qt.AlignTop | Qt.AlignLeft
+                            Layout.leftMargin: 50
+                            spacing: 10
+
+                            Rectangle
+                            {
+                                id: githubIcon
+                                width: 35
+                                height: 35
+                                color: "#444444"
+                                radius: 50
+
+                                Image {
+                                    id: gitImg
+                                    source: "qrc:/githubIcon.svg"
+                                    sourceSize: Qt.size(15,15)
+                                    fillMode: Image.PreserveAspectFit
+                                    anchors.centerIn: parent
+                                }
+
+                                MouseArea
+                                {
+                                    anchors.fill: parent
+                                    propagateComposedEvents: true
+                                    hoverEnabled: true
+                                    acceptedButtons: Qt.LeftButton
+                                    cursorShape: Qt.PointingHandCursor
+
+                                    onClicked:
+                                    {
+                                        Qt.openUrlExternally("https://github.com/kastuv")
+                                    }
+
+                                    onEntered:
+                                    {
+                                        githubIcon.color = "#628935";
+                                    }
+                                    onExited:
+                                    {
+                                        githubIcon.color = "#444444";
+                                    }
+                                }
+                            }
+
+                            Rectangle
+                            {
+                                id: linkedinIcon
+                                width: 35
+                                height: 35
+                                color: "#444444"
+                                radius: 50
+
+                                Image {
+                                    id: linkedinImg
+                                    source: "qrc:/linkedinIcon.svg"
+                                    sourceSize: Qt.size(15,15)
+                                    fillMode: Image.PreserveAspectFit
+                                    anchors.centerIn: parent
+                                }
+
+                                MouseArea
+                                {
+                                    anchors.fill: parent
+                                    propagateComposedEvents: true
+                                    hoverEnabled: true
+                                    acceptedButtons: Qt.LeftButton
+                                    cursorShape: Qt.PointingHandCursor
+
+                                    onClicked:
+                                    {
+                                        Qt.openUrlExternally("https://www.linkedin.com/in/kaustuvpokharel/")
+                                    }
+
+                                    onEntered:
+                                    {
+                                        linkedinIcon.color = "#628935";
+                                    }
+                                    onExited:
+                                    {
+                                        linkedinIcon.color = "#444444";
+                                    }
+                                }
+                            }
+
+                            Rectangle
+                            {
+                                id: behanceIcon
+                                width: 35
+                                height: 35
+                                color: "#444444"
+                                radius: 50
+
+                                Image {
+                                    id: behanceImg
+                                    source: "qrc:/behanceIcon.svg"
+                                    sourceSize: Qt.size(15,15)
+                                    fillMode: Image.PreserveAspectFit
+                                    anchors.centerIn: parent
+                                }
+
+                                MouseArea
+                                {
+                                    anchors.fill: parent
+                                    propagateComposedEvents: true
+                                    hoverEnabled: true
+                                    acceptedButtons: Qt.LeftButton
+                                    cursorShape: Qt.PointingHandCursor
+
+                                    onClicked:
+                                    {
+                                        Qt.openUrlExternally("https://www.behance.net/kaustuvpokharel3")
+                                    }
+
+                                    onEntered:
+                                    {
+                                        behanceIcon.color = "#628935";
+                                    }
+                                    onExited:
+                                    {
+                                        behanceIcon.color = "#444444";
+                                    }
+                                }
+                            }
+
+                            Rectangle
+                            {
+                                id: ytIcon
+                                width: 35
+                                height: 35
+                                color: "#444444"
+                                radius: 50
+
+                                Image {
+                                    id: ytImg
+                                    source: "qrc:/ytIcon.svg"
+                                    sourceSize: Qt.size(15,15)
+                                    fillMode: Image.PreserveAspectFit
+                                    anchors.centerIn: parent
+                                }
+
+                                MouseArea
+                                {
+                                    anchors.fill: parent
+                                    propagateComposedEvents: true
+                                    hoverEnabled: true
+                                    acceptedButtons: Qt.LeftButton
+                                    cursorShape: Qt.PointingHandCursor
+
+                                    onClicked:
+                                    {
+                                        Qt.openUrlExternally("https://youtube.com/@K-A-L-I-?si=NlIWTPY7aL1Kp45r")
+                                    }
+
+                                    onEntered:
+                                    {
+                                        ytIcon.color = "#628935";
+                                    }
+                                    onExited:
+                                    {
+                                        ytIcon.color = "#444444";
+                                    }
+                                }
+                            }
+
+                            Rectangle
+                            {
+                                id: instaIcon
+                                width: 35
+                                height: 35
+                                color: "#444444"
+                                radius: 50
+
+                                Image {
+                                    id: instaImg
+                                    source: "qrc:/instaIcon.svg"
+                                    sourceSize: Qt.size(15,15)
+                                    fillMode: Image.PreserveAspectFit
+                                    anchors.centerIn: parent
+                                }
+
+                                MouseArea
+                                {
+                                    anchors.fill: parent
+                                    propagateComposedEvents: true
+                                    hoverEnabled: true
+                                    acceptedButtons: Qt.LeftButton
+                                    cursorShape: Qt.PointingHandCursor
+
+                                    onClicked:
+                                    {
+                                        Qt.openUrlExternally("https://www.instagram.com/hail.to.kali")
+                                    }
+
+                                    onEntered:
+                                    {
+                                        instaIcon.color = "#628935";
+                                    }
+                                    onExited:
+                                    {
+                                        instaIcon.color = "#444444";
+                                    }
+                                }
+                            }
+                        }
+
                     }
+
 
                     ColumnLayout
                     {

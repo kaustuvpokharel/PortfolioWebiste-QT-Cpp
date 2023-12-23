@@ -5,5 +5,10 @@
         <file alias="pj1">pj1</file>
         <file alias="greenCic">greeenCic</file>
         <file alias="grayCic">grayCic</file>
+        <file>behanceIcon.svg</file>
+        <file>githubIcon.svg</file>
+        <file>instaIcon.svg</file>
+        <file>linkedinIcon.svg</file>
+        <file>ytIcon.svg</file>
     </qresource>
 </RCC>
