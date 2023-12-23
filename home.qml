@@ -583,14 +583,18 @@ Page
                     {
                         anchors.fill: parent
                         hoverEnabled: true
+                        acceptedButtons: Qt.LeftButton
+                        cursorShape: Qt.PointingHandCursor
 
                         onEntered:
                         {
                             pj1.color = "#628935";
+                            imgPj1.scale = 1.05;
                         }
                         onExited:
                         {
                             pj1.color = "#444444";
+                            imgPj1.scale = 1;
                         }
 
                     }
@@ -675,14 +679,18 @@ Page
                     {
                         anchors.fill: parent
                         hoverEnabled: true
+                        acceptedButtons: Qt.LeftButton
+                        cursorShape: Qt.PointingHandCursor
 
                         onEntered:
                         {
                             pj2.color = "#628935";
+                            imgPj2.scale = 1.05;
                         }
                         onExited:
                         {
                             pj2.color = "#444444";
+                            imgPj2.scale = 1;
                         }
 
                     }
@@ -766,14 +774,18 @@ Page
                     {
                         anchors.fill: parent
                         hoverEnabled: true
+                        acceptedButtons: Qt.LeftButton
+                        cursorShape: Qt.PointingHandCursor
 
                         onEntered:
                         {
                             pj3.color = "#628935";
+                            imgPj3.scale = 1.05;
                         }
                         onExited:
                         {
                             pj3.color = "#444444";
+                            imgPj3.scale = 1;
                         }
 
                     }
