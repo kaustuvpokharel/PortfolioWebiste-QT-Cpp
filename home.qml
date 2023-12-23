@@ -86,8 +86,11 @@ Page
                     cursorShape: Qt.PointingHandCursor
 
                     //just to check if the home button is clicked
-                    onClicked: console.log("About button clicked: Test case")
-
+                    onClicked:
+                    {
+                        loader.push("qrc:/WEBSITE/about.qml")
+                        console.log("About button clicked: Test case")
+                    }
                     onEntered: {
                         aboutN.color = "#628935";
                         aboutN.font.styleName = "Medium";
@@ -595,6 +598,12 @@ Page
                         acceptedButtons: Qt.LeftButton
                         cursorShape: Qt.PointingHandCursor
 
+                        onClicked:
+                        {
+                            Qt.openUrlExternally("https://github.com/kastuv/FireWall_Version2")
+                            console.log("Clicked on Firewall.02")
+                        }
+
                         onEntered:
                         {
                             pj1.color = "#628935";
@@ -632,7 +641,7 @@ Page
                     }
                     Text
                     {
-                        text: "FIREWALL.02"
+                        text: "Neural Network in C"
                         font.family: philo.name
                         font.pixelSize: 30
                         color: "#FFFFFF"
@@ -691,6 +700,12 @@ Page
                         acceptedButtons: Qt.LeftButton
                         cursorShape: Qt.PointingHandCursor
 
+                        onClicked:
+                        {
+                            Qt.openUrlExternally("https://github.com/kastuv/neuralNetwork-in-C")
+                            console.log("Clicked on Firewall.02")
+                        }
+
                         onEntered:
                         {
                             pj2.color = "#628935";
@@ -728,12 +743,12 @@ Page
                     }
                     Text
                     {
-                        text: "FIREWALL.02"
+                        text: "OpenCv-\nImageVideoProcessing\nAndroid-app"
                         font.family: philo.name
                         font.pixelSize: 30
                         color: "#FFFFFF"
                         anchors.bottom: linepj3.top
-                        anchors.bottomMargin: 40
+                        anchors.bottomMargin: 10
                         anchors.left: pj3.left
                         anchors.leftMargin: 25
                     }
@@ -785,6 +800,12 @@ Page
                         hoverEnabled: true
                         acceptedButtons: Qt.LeftButton
                         cursorShape: Qt.PointingHandCursor
+
+                        onClicked:
+                        {
+                            Qt.openUrlExternally("https://github.com/kastuv/OpenCv-QT-Image-videoProcessing")
+                            console.log("Clicked on Firewall.02")
+                        }
 
                         onEntered:
                         {
