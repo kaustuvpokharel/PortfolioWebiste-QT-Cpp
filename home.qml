@@ -143,8 +143,11 @@ Page
                     cursorShape: Qt.PointingHandCursor
 
                     //just to check if the home button is clicked
-                    onClicked: console.log("Resume button clicked: Test case")
-
+                    onClicked:
+                    {
+                        loader.push("qrc:/WEBSITE/resume.qml")
+                        console.log("Resume button clicked: Test case")
+                    }
                     onEntered: {
                         resumeN.color = "#628935";
                         resumeN.font.styleName = "Medium";
@@ -1158,12 +1161,40 @@ Page
 
                         Text
                         {
+                            id: mailtext2
                             text: qsTr("Mail me")
                             font.family: "Poppins"
                             font.styleName: "Medium"
                             font.pixelSize: 25
                             color: "#FFFFFF"
                             anchors.centerIn: parent
+                        }
+                        MouseArea
+                        {
+                            anchors.fill: parent
+                            hoverEnabled: true
+                            onClicked:
+                            {
+                                // Specify the email address and subject
+                                var emailAddress = "kastuvpokharel@email.com";
+                                var subject = "Hello; Reaching out from your Website";
+                                var mailtoUrl = "mailto:" + emailAddress + "?subject=" + encodeURIComponent(subject);
+                                            // Open the default email client
+                                Qt.openUrlExternally(mailtoUrl);
+                            }
+                            onEntered:
+                            {
+                                mailMe2.color = "#628935";
+                                mailMe2.border.color = "#628935";
+                                mailtext2.color = "#FFFFFF";
+                            }
+                            onExited:
+                            {
+                                mailMe2.color = "Transparent";
+                                mailMe2.border.color = "#FFFFFF";
+                                mailtext2.color = "#FFFFFF";
+                            }
+
                         }
                     }
 

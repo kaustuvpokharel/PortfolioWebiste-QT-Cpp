@@ -1,11 +1,13 @@
 import QtQuick
 import QtQuick.Controls
+import QtQuick.Layouts
+
 
 Page {
-    Text {
-        anchors.centerIn: parent
-        id: pjj
-        text: qsTr("<html><h1>Resume page WORK IN PROGRESS</h1></html>")
+    Flickable
+    {
+        anchors.fill: parent
+        contentWidth: parent.width // Adjust contentWidth based on your needs
+        contentHeight: resView.implicitHeight
     }
-
 }

@@ -37,7 +37,8 @@ set_target_properties(appWEBSITE PROPERTIES
 )
 
 target_link_libraries(appWEBSITE
-    PRIVATE Qt6::Quick)
+    PRIVATE Qt6::Quick
+)
 
 include(GNUInstallDirs)
 install(TARGETS appWEBSITE
