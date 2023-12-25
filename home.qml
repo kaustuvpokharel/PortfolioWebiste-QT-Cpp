@@ -370,7 +370,15 @@ Page
                     {
                         anchors.fill: parent
                         hoverEnabled: true
-
+                        onClicked:
+                        {
+                            // Specify the email address and subject
+                            var emailAddress = "kastuvpokharel@email.com";
+                            var subject = "Hello; Reaching out from your Website";
+                            var mailtoUrl = "mailto:" + emailAddress + "?subject=" + encodeURIComponent(subject);
+                                        // Open the default email client
+                            Qt.openUrlExternally(mailtoUrl);
+                        }
                         onEntered:
                         {
                             mailMe.color = "#628935";
@@ -817,7 +825,6 @@ Page
                             pj3.color = "#444444";
                             imgPj3.scale = 1;
                         }
-
                     }
                 }
 
