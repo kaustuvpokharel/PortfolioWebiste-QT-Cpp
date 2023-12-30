@@ -593,5 +593,38 @@ Page {
             }
 
         }
+
+        Rectangle
+        {
+            id: skillRect
+            width: parent.width
+            height: 850
+            color: "Transparent"
+            radius: 50
+            anchors.top:myEdu.bottom
+            anchors.topMargin: 150
+
+            Rectangle
+            {
+                id: bg
+                width: parent.width
+                height: 850
+                color: "#628935"
+                radius: 50
+                opacity: 0.1
+            }
+
+            Text
+            {
+                id: skilltext
+                text: qsTr("<html>My <font color='#628935'>Skills</font></html>")
+                anchors.horizontalCenter: parent.horizontalCenter
+                anchors.top: parent.top
+                anchors.topMargin: 100
+                font.family: philo.name
+                font.pixelSize: 50
+                color: "#313131"
+            }
+        }
     }
 }
