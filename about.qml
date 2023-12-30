@@ -1,5 +1,6 @@
 import QtQuick
 import QtQuick.Controls
+import QtQuick.Layouts
 
 Page {
     background: Rectangle
@@ -235,7 +236,362 @@ Page {
             horizontalAlignment: Text.AlignHCenter
         }
 
+        Rectangle
+        {
+            id: bioData
+            width: parent.width
+            height: 650
+            color: "#313131"
+            radius: 50
+            anchors.top: intro.bottom
+            anchors.topMargin: 100
 
+            RowLayout
+            {
+                spacing: 100
+                id:quoteData
+                ColumnLayout
+                {
+                    Layout.alignment: Qt.AlignLeft | Qt.AlignTop
+                    Layout.leftMargin: 50
+                    Layout.topMargin: 70
 
+                    spacing: 30
+                    Text {
+                        id: quote
+                        text: qsTr("The\ndoer\nalone\nlearneth.")
+                        font.family: philo.name
+                        font.pixelSize: 100
+                        color: "#FFFFFF"
+                    }
+
+                    Text {
+                        id: author
+                        text: qsTr("- <html><i>Friedrich Nietzsche</i></html>")
+                        font.family: "poppins"
+                        font.styleName: "Light"
+                        font.pixelSize: 20
+                        color: "#FFFFFF"
+                    }
+                }
+
+                ColumnLayout
+                {
+                    id: bioInfo
+                    spacing: 50
+                    Text {
+                        id: about
+                        text: qsTr("<html><font color='#628935'>About</font> Me</html>")
+                        font.family: philo.name
+                        font.pixelSize: 50
+                        color: "#FFFFFF"
+                    }
+
+                    GridLayout
+                    {
+                        id: aboutdata
+                        columns: 3
+                        columnSpacing: 100
+                        rowSpacing: 50
+                        ColumnLayout
+                        {
+                            id: name
+                            Text {
+                                text: qsTr("Name")
+                                font.family: philo.name
+                                font.pixelSize: 30
+                                color: "#FFFFFF"
+                            }
+                            Text {
+                                text: qsTr("Kaustuv Pokharel")
+                                font.family: "poppins"
+                                font.styleName: "Light"
+                                font.pixelSize: 20
+                                color: "#FFFFFF"
+                            }
+                        }
+
+                        ColumnLayout
+                        {
+                            id: dob
+                            Text {
+                                text: qsTr("DOB")
+                                font.family: philo.name
+                                font.pixelSize: 30
+                                color: "#FFFFFF"
+                            }
+                            Text {
+                                text: qsTr("24th OCT 2001")
+                                font.family: "poppins"
+                                font.styleName: "Light"
+                                font.pixelSize: 20
+                                color: "#FFFFFF"
+                            }
+                        }
+
+                        ColumnLayout
+                        {
+                            id: age
+                            Text {
+                                text: qsTr("Age")
+                                font.family: philo.name
+                                font.pixelSize: 30
+                                color: "#FFFFFF"
+                            }
+                            Text {
+                                text: qsTr("22")
+                                font.family: "poppins"
+                                font.styleName: "Light"
+                                font.pixelSize: 20
+                                color: "#FFFFFF"
+                            }
+                        }
+
+                        ColumnLayout
+                        {
+                            id: address
+                            Text {
+                                text: qsTr("Address")
+                                font.family: philo.name
+                                font.pixelSize: 30
+                                color: "#FFFFFF"
+                            }
+                            Text {
+                                text: qsTr("Toronto, Canada")
+                                font.family: "poppins"
+                                font.styleName: "Light"
+                                font.pixelSize: 20
+                                color: "#FFFFFF"
+                            }
+                        }
+
+                        ColumnLayout
+                        {
+                            id: origin
+                            Text {
+                                text: qsTr("Origin")
+                                font.family: philo.name
+                                font.pixelSize: 30
+                                color: "#FFFFFF"
+                            }
+                            Text {
+                                text: qsTr("Biratnagar, Nepal")
+                                font.family: "poppins"
+                                font.styleName: "Light"
+                                font.pixelSize: 20
+                                color: "#FFFFFF"
+                            }
+                        }
+
+                        ColumnLayout
+                        {
+                            id: email
+                            Text {
+                                text: qsTr("Email")
+                                font.family: philo.name
+                                font.pixelSize: 30
+                                color: "#FFFFFF"
+                            }
+
+                            Text {
+                                text: qsTr("kastuvpokharel@gmail.com")
+                                font.family: "poppins"
+                                font.styleName: "Light"
+                                font.pixelSize: 20
+                                color: "#FFFFFF"
+                            }
+                        }
+
+                        ColumnLayout
+                        {
+                            id: num
+                            Text {
+                                text: qsTr("Phone")
+                                font.family: philo.name
+                                font.pixelSize: 30
+                                color: "#FFFFFF"
+                            }
+                            Text {
+                                text: qsTr("+1 647-624-2171")
+                                font.family: "poppins"
+                                font.styleName: "Light"
+                                font.pixelSize: 20
+                                color: "#FFFFFF"
+                            }
+                        }
+
+                        ColumnLayout
+                        {
+                            id: language
+                            Text {
+                                text: qsTr("Language")
+                                font.family: philo.name
+                                font.pixelSize: 30
+                                color: "#FFFFFF"
+                            }
+                            Text {
+                                text: qsTr("English, Nepali, Hindi, Bengali")
+                                font.family: "poppins"
+                                font.styleName: "Light"
+                                font.pixelSize: 20
+                                color: "#FFFFFF"
+                            }
+                        }
+
+                        ColumnLayout
+                        {
+                            id: job
+                            Text {
+                                text: qsTr("Open for")
+                                font.family: philo.name
+                                font.pixelSize: 30
+                                color: "#FFFFFF"
+                            }
+                            Text {
+                                text: qsTr("Internship / Full-time")
+                                font.family: "poppins"
+                                font.styleName: "Light"
+                                font.pixelSize: 20
+                                color: "#FFFFFF"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        ColumnLayout
+        {
+            id:myEdu
+            anchors.top:bioData.bottom
+            width: parent.width
+            spacing: 50
+
+            Text
+            {
+                id: myEdutext
+                text: qsTr("<html>My <font color='#628935'>Education</font></html>")
+                Layout.alignment: Qt.AlignHCenter | Qt.AlignTop
+                Layout.topMargin: 100
+                font.family: philo.name
+                font.pixelSize: 50
+                color: "#313131"
+            }
+
+            RowLayout
+            {
+                id: edu1
+                Layout.alignment: Qt.AlignTop | Qt.AlignLeft
+                Layout.leftMargin: 50
+
+                Text
+                {
+                    id: edu1text
+                    text: "Seneca Polytechnic - Toronto"
+                    font.family: philo.name
+                    font.pixelSize: 30
+
+                    Text
+                    {
+                        text: qsTr("September 2022 - November 2024")
+                        font.family: "Poppins"
+                        font.styleName: "Medium"
+                        font.pixelSize: 20
+                        color: "#313131"
+                        anchors.top: parent.bottom
+                        opacity: 0.7
+                    }
+                }
+
+                Image {
+                    id: imgCIC
+                    source: "qrc:/greenCic"
+                    sourceSize: Qt.size(50,50)
+                    Layout.alignment: Qt.AlignLeft
+                    Layout.leftMargin: 198
+                    Layout.topMargin: 25
+                    fillMode: Image.PreserveAspectFit
+                }
+
+                Text
+                {
+                    id: edu1Dis
+                    text: "Software Engineering"
+                    font.family: philo.name
+                    font.pixelSize: 30
+                    Layout.alignment: Qt.AlignLeft
+                    Layout.leftMargin: 50
+
+                    Text
+                    {
+                        text: qsTr("Relevant coursework: Data Structures and Algorithms,\nOperating Systems, Software Design and Development,\nProgramming Languages,and Computer Networks,\nMaths(calculus I & II, Linear algebra, discrete, statistics).")
+                        font.family: "Poppins"
+                        font.styleName: "Medium"
+                        font.pixelSize: 20
+                        color: "#313131"
+                        anchors.top: parent.bottom
+                        opacity: 0.7
+                    }
+                }
+            }
+
+            RowLayout
+            {
+                id: edu2
+                Layout.alignment: Qt.AlignTop | Qt.AlignLeft
+                Layout.topMargin: 50
+                Layout.leftMargin: 50
+
+                Text
+                {
+                    id: edu2text
+                    text: "Trinity International College - Nepal"
+                    font.family: philo.name
+                    font.pixelSize: 30
+
+                    Text
+                    {
+                        text: qsTr("May 2018 - Febuary 2020")
+                        font.family: "Poppins"
+                        font.styleName: "Medium"
+                        font.pixelSize: 20
+                        color: "#313131"
+                        anchors.top: parent.bottom
+                        opacity: 0.7
+                    }
+                }
+
+                Image {
+                    source: "qrc:/grayCic"
+                    sourceSize: Qt.size(50,50)
+                    Layout.alignment: Qt.AlignLeft
+                    Layout.leftMargin: 110
+                    Layout.topMargin: 25
+                    fillMode: Image.PreserveAspectFit
+                }
+
+                Text
+                {
+                    id: edu2Dis
+                    text: "Computer Science"
+                    font.family: philo.name
+                    font.pixelSize: 30
+                    Layout.alignment: Qt.AlignLeft
+                    Layout.leftMargin: 50
+
+                    Text
+                    {
+                        text: qsTr("Relevant coursework: Maths, Science and Computer.")
+                        font.family: "Poppins"
+                        font.styleName: "Medium"
+                        font.pixelSize: 20
+                        color: "#313131"
+                        anchors.top: parent.bottom
+                        opacity: 0.7
+                    }
+                }
+            }
+
+        }
     }
 }
