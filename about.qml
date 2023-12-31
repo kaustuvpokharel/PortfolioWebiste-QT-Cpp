@@ -611,7 +611,7 @@ Page {
                 height: 850
                 color: "#628935"
                 radius: 50
-                opacity: 0.1
+                opacity: 0.05
             }
 
             Text
@@ -624,6 +624,57 @@ Page {
                 font.family: philo.name
                 font.pixelSize: 50
                 color: "#313131"
+            }
+
+            GridLayout
+            {
+                id: skillbarBox
+                columns: 2
+
+                ColumnLayout
+                {
+                    id: skillWbar
+                    spacing: 10
+
+                    RowLayout
+                    {
+                        spacing: 380
+                        Text {
+                            id: tool1
+                            text: qsTr("QT / QML")
+                            font.family: philo.name
+                            font.pixelSize: 20
+                            color: "#313131"
+                        }
+
+                        Text {
+                            id: per1
+                            text: qsTr("75%")
+                            font.family: "Poppins"
+                            font.styleName: "Bold"
+                            font.pixelSize: 15
+                            color: "#628935"
+                        }
+                    }
+                    Rectangle
+                    {
+                        id: skillBar
+                        width: 0.75 * skillBarS.width
+                        height: 5
+                        radius: 25
+                        color: "#628935"
+
+                        Rectangle
+                        {
+                            id: skillBarS
+                            width: 500
+                            height: 5
+                            radius: 25
+                            color: "#313131"
+                            opacity: 0.2
+                        }
+                    }
+                }
             }
         }
     }
