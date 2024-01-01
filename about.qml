@@ -684,7 +684,7 @@ Page {
 
                 ColumnLayout
                 {
-                    id: bash
+                    id: figma
                     spacing: 10
 
                     RowLayout
@@ -692,7 +692,7 @@ Page {
                         spacing: 477
                         Text {
                             id: tool2
-                            text: qsTr("Bash / Zsh")
+                            text: qsTr("Figma")
                             font.family: philo.name
                             font.pixelSize: 20
                             color: "#313131"
@@ -700,7 +700,7 @@ Page {
 
                         Text {
                             id: per2
-                            text: qsTr("75%")
+                            text: qsTr("85%")
                             font.family: "Poppins"
                             font.styleName: "Bold"
                             font.pixelSize: 15
@@ -710,7 +710,7 @@ Page {
                     Rectangle
                     {
                         id: skillBar2
-                        width: 0.75 * skillBarS2.width
+                        width: 0.85 * skillBarS2.width
                         height: 5
                         radius: 25
                         color: "#628935"
@@ -988,6 +988,277 @@ Page {
                         Rectangle
                         {
                             id: skillBarS8
+                            width: 600
+                            height: 5
+                            radius: 25
+                            color: "#313131"
+                            opacity: 0.2
+                        }
+                    }
+                }
+
+                ColumnLayout
+                {
+                    id: sql
+                    spacing: 10
+
+                    RowLayout
+                    {
+                        spacing: 425
+                        Text {
+                            id: tool9
+                            text: qsTr("SQL (PostgreSQL)")
+                            font.family: philo.name
+                            font.pixelSize: 20
+                            color: "#313131"
+                        }
+
+                        Text {
+                            id: per9
+                            text: qsTr("75%")
+                            font.family: "Poppins"
+                            font.styleName: "Bold"
+                            font.pixelSize: 15
+                            color: "#628935"
+                        }
+                    }
+                    Rectangle
+                    {
+                        id: skillBar9
+                        width: 0.75 * skillBarS9.width
+                        height: 5
+                        radius: 25
+                        color: "#628935"
+
+                        Rectangle
+                        {
+                            id: skillBarS9
+                            width: 600
+                            height: 5
+                            radius: 25
+                            color: "#313131"
+                            opacity: 0.2
+                        }
+                    }
+                }
+
+                ColumnLayout
+                {
+                    id: photoshop
+                    spacing: 10
+
+                    RowLayout
+                    {
+                        spacing: 413
+                        Text {
+                            id: tool10
+                            text: qsTr("Adobe Photoshop")
+                            font.family: philo.name
+                            font.pixelSize: 20
+                            color: "#313131"
+                        }
+
+                        Text {
+                            id: per10
+                            text: qsTr("90%")
+                            font.family: "Poppins"
+                            font.styleName: "Bold"
+                            font.pixelSize: 15
+                            color: "#628935"
+                        }
+                    }
+                    Rectangle
+                    {
+                        id: skillBar10
+                        width: 0.90 * skillBarS10.width
+                        height: 5
+                        radius: 25
+                        color: "#628935"
+
+                        Rectangle
+                        {
+                            id: skillBarS10
+                            width: 600
+                            height: 5
+                            radius: 25
+                            color: "#313131"
+                            opacity: 0.2
+                        }
+                    }
+                }
+
+                ColumnLayout
+                {
+                    id: stm32
+                    spacing: 10
+
+                    RowLayout
+                    {
+                        spacing: 425
+                        Text {
+                            id: tool11
+                            text: qsTr("Embedded/STM32")
+                            font.family: philo.name
+                            font.pixelSize: 20
+                            color: "#313131"
+                        }
+
+                        Text {
+                            id: per11
+                            text: qsTr("40%")
+                            font.family: "Poppins"
+                            font.styleName: "Bold"
+                            font.pixelSize: 15
+                            color: "#628935"
+                        }
+                    }
+                    Rectangle
+                    {
+                        id: skillBar11
+                        width: 0.40 * skillBarS11.width
+                        height: 5
+                        radius: 25
+                        color: "#628935"
+
+                        Rectangle
+                        {
+                            id: skillBarS11
+                            width: 600
+                            height: 5
+                            radius: 25
+                            color: "#313131"
+                            opacity: 0.2
+                        }
+                    }
+                }
+
+                ColumnLayout
+                {
+                    id: bash
+                    spacing: 10
+
+                    RowLayout
+                    {
+                        spacing: 470
+                        Text {
+                            id: tool12
+                            text: qsTr("Bash / Zsh")
+                            font.family: philo.name
+                            font.pixelSize: 20
+                            color: "#313131"
+                        }
+
+                        Text {
+                            id: per12
+                            text: qsTr("70%")
+                            font.family: "Poppins"
+                            font.styleName: "Bold"
+                            font.pixelSize: 15
+                            color: "#628935"
+                        }
+                    }
+                    Rectangle
+                    {
+                        id: skillBar12
+                        width: 0.70 * skillBarS12.width
+                        height: 5
+                        radius: 25
+                        color: "#628935"
+
+                        Rectangle
+                        {
+                            id: skillBarS12
+                            width: 600
+                            height: 5
+                            radius: 25
+                            color: "#313131"
+                            opacity: 0.2
+                        }
+                    }
+                }
+
+                ColumnLayout
+                {
+                    id: git
+                    spacing: 10
+
+                    RowLayout
+                    {
+                        spacing: 550
+                        Text {
+                            id: tool13
+                            text: qsTr("Git")
+                            font.family: philo.name
+                            font.pixelSize: 20
+                            color: "#313131"
+                        }
+
+                        Text {
+                            id: per13
+                            text: qsTr("70%")
+                            font.family: "Poppins"
+                            font.styleName: "Bold"
+                            font.pixelSize: 15
+                            color: "#628935"
+
+                        }
+                    }
+                    Rectangle
+                    {
+                        id: skillBar13
+                        width: 0.70 * skillBarS13.width
+                        height: 5
+                        radius: 25
+                        color: "#628935"
+
+                        Rectangle
+                        {
+                            id: skillBarS13
+                            width: 600
+                            height: 5
+                            radius: 25
+                            color: "#313131"
+                            opacity: 0.2
+                        }
+                    }
+                }
+
+                ColumnLayout
+                {
+                    id: jira
+                    spacing: 10
+
+                    RowLayout
+                    {
+                        spacing: 530
+                        Text {
+                            id: tool14
+                            text: qsTr("Jira")
+                            font.family: philo.name
+                            font.pixelSize: 20
+                            color: "#313131"
+                        }
+
+                        Text {
+                            id: per14
+                            text: qsTr("70%")
+                            font.family: "Poppins"
+                            font.styleName: "Bold"
+                            font.pixelSize: 15
+                            color: "#628935"
+                        }
+                    }
+                    Rectangle
+                    {
+                        id: skillBar14
+                        width: 0.70 * skillBarS12.width
+                        height: 5
+                        radius: 25
+                        color: "#628935"
+
+                        Rectangle
+                        {
+                            id: skillBarS14
                             width: 600
                             height: 5
                             radius: 25
