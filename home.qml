@@ -7,12 +7,12 @@ Page
     background: Rectangle {
         color: "#FFFFFF"
     }
-    height: 2050
+
     Flickable
     {
         anchors.fill: parent
         contentWidth: parent.width // Adjust contentWidth based on your needs
-        contentHeight: Math.max(5000, parent.height)
+        contentHeight : Math.max(footer.y + footer.height - 100, height);
 
 
         Rectangle
@@ -1599,5 +1599,11 @@ Page
                 }
             }
         }
+        onHeightChanged: {
+            var maxContentY = Math.max(0, contentHeight - height);
+            contentY = Math.min(contentY, maxContentY);
+
+            contentHeight = Math.max(footer.y + footer.height - 100, height);
+            }
     }
 }
