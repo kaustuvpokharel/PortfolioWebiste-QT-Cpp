@@ -337,6 +337,12 @@ Page
                         anchors.fill: parent
                         hoverEnabled: true
 
+                        onClicked:
+                        {
+                            loader.push("qrc:/WEBSITE/resume.qml")
+                            console.log("About button clicked: Test case")
+                        }
+
                         onEntered:
                         {
                             resume.color = "#628935";
