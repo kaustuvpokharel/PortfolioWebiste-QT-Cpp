@@ -10,5 +10,7 @@
         <file>instaIcon.svg</file>
         <file>linkedinIcon.svg</file>
         <file>ytIcon.svg</file>
+        <file>ResumeKP.pdf</file>
+        <file alias="main">Main (1).gif</file>
     </qresource>
 </RCC>

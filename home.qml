@@ -182,7 +182,11 @@ Page
                     cursorShape: Qt.PointingHandCursor
 
                     //just to check if the home button is clicked
-                    onClicked: console.log("Project button clicked: Test case")
+                    onClicked:
+                    {
+                        loader.push("qrc:/WEBSITE/project.qml")
+                        console.log("About button clicked: Test case")
+                    }
 
                     onEntered: {
                         projectN.color = "#628935";
