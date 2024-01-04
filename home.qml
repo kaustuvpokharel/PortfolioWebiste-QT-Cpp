@@ -596,19 +596,20 @@ Page
                     }
 
 
-                    Rectangle
-                    {
+                    Rectangle {
                         id: imgPj1
                         width: 420
                         height: 300
                         radius: 30
                         anchors.bottom: pj1.bottom
+                        clip: true
 
                         Image {
-                            id: img1
                             source: "qrc:/pj1"
-                            anchors.fill: imgPj1
+                            width: imgPj1.width
+                            height: imgPj1.height
                             fillMode: Image.PreserveAspectFit
+
                         }
                     }
 

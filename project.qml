@@ -344,12 +344,12 @@ Page
                 }
                 Text
                 {
-                    text: "OpenCv-\nImageVideoProcessing\nAndroid-app"
+                    text: "FIREWALL.02"
                     font.family: philo.name
                     font.pixelSize: 30
                     color: "#FFFFFF"
                     anchors.bottom: linepj1.top
-                    anchors.bottomMargin: 10
+                    anchors.bottomMargin: 40
                     anchors.left: pj1.left
                     anchors.leftMargin: 25
                 }
@@ -542,12 +542,12 @@ Page
                 }
                 Text
                 {
-                    text: "OpenCv-\nImageVideoProcessing\nAndroid-app"
+                    text: "Neural Network In C"
                     font.family: philo.name
                     font.pixelSize: 30
                     color: "#FFFFFF"
                     anchors.bottom: linepj3.top
-                    anchors.bottomMargin: 10
+                    anchors.bottomMargin: 40
                     anchors.left: pj3.left
                     anchors.leftMargin: 25
                 }
@@ -640,12 +640,12 @@ Page
                 }
                 Text
                 {
-                    text: "OpenCv-\nImageVideoProcessing\nAndroid-app"
+                    text: "To-Do app QT/C++"
                     font.family: philo.name
                     font.pixelSize: 30
                     color: "#FFFFFF"
                     anchors.bottom: linepj4.top
-                    anchors.bottomMargin: 10
+                    anchors.bottomMargin: 40
                     anchors.left: pj4.left
                     anchors.leftMargin: 25
                 }
@@ -739,12 +739,12 @@ Page
                 }
                 Text
                 {
-                    text: "OpenCv-\nImageVideoProcessing\nAndroid-app"
+                    text: "Portfolio Website\nQT/QML/C++"
                     font.family: philo.name
                     font.pixelSize: 30
                     color: "#FFFFFF"
                     anchors.bottom: linepj5.top
-                    anchors.bottomMargin: 10
+                    anchors.bottomMargin: 25
                     anchors.left: pj5.left
                     anchors.leftMargin: 25
                 }
@@ -838,12 +838,12 @@ Page
                 }
                 Text
                 {
-                    text: "OpenCv-\nImageVideoProcessing\nAndroid-app"
+                    text: "Calculator C++/QT"
                     font.family: philo.name
                     font.pixelSize: 30
                     color: "#FFFFFF"
                     anchors.bottom: linepj6.top
-                    anchors.bottomMargin: 10
+                    anchors.bottomMargin: 40
                     anchors.left: pj6.left
                     anchors.leftMargin: 25
                 }
