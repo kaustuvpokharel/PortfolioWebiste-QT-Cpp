@@ -824,7 +824,7 @@ Page
 
                         onClicked:
                         {
-                            Qt.openUrlExternally("https://github.com/kastuv/OpenCv-QT-Image-videoProcessing")
+                            Qt.openUrlExternally("https://github.com/kastuv/ImageVideoProcessing-QT-OpenCV-C-")
                             console.log("Clicked on Firewall.02")
                         }
 
@@ -895,6 +895,41 @@ Page
                         color: "#313131"
                         anchors.top: parent.bottom
                         opacity: 0.7
+
+                        Text
+                        {
+                            id: cre1
+                            text: qsTr("<html>View Credentials</html>")
+                            font.family: "Poppins"
+                            font.styleName: "Medium"
+                            font.pixelSize: 15
+                            color: "Blue"
+                            anchors.top: parent.bottom
+
+                            MouseArea
+                            {
+                                id: exp1a
+                                anchors.fill: parent
+                                propagateComposedEvents: true
+                                hoverEnabled: true
+                                acceptedButtons: Qt.LeftButton
+                                cursorShape: Qt.PointingHandCursor
+
+                                //just to check if the home button is clicked
+                                onClicked:
+                                {
+                                    Qt.openUrlExternally("https://www.linkedin.com/feed/update/urn:li:activity:7130406453655310336/")
+                                }
+
+                                onEntered: {
+                                    cre1.color = "#313131";
+                                }
+
+                                onExited: {
+                                    cre1.color = "Blue";
+                                }
+                            }
+                        }
                     }
                 }
 
@@ -953,6 +988,41 @@ Page
                         color: "#313131"
                         anchors.top: parent.bottom
                         opacity: 0.7
+
+                        Text
+                        {
+                            id: cre2
+                            text: qsTr("<html>View Credentials</html>")
+                            font.family: "Poppins"
+                            font.styleName: "Medium"
+                            font.pixelSize: 15
+                            color: "Blue"
+                            anchors.top: parent.bottom
+
+                            MouseArea
+                            {
+                                id: exp2a
+                                anchors.fill: parent
+                                propagateComposedEvents: true
+                                hoverEnabled: true
+                                acceptedButtons: Qt.LeftButton
+                                cursorShape: Qt.PointingHandCursor
+
+                                //just to check if the home button is clicked
+                                onClicked:
+                                {
+                                    Qt.openUrlExternally("https://clubs.ssfinc.ca/senecascitech/seneca-scitech/#our-team")
+                                }
+
+                                onEntered: {
+                                    cre2.color = "#313131";
+                                }
+
+                                onExited: {
+                                    cre2.color = "Blue";
+                                }
+                            }
+                        }
                     }
                 }
 
@@ -1009,6 +1079,41 @@ Page
                         color: "#313131"
                         anchors.top: parent.bottom
                         opacity: 0.7
+
+                        Text
+                        {
+                            id: cre3
+                            text: qsTr("<html>View Credentials</html>")
+                            font.family: "Poppins"
+                            font.styleName: "Medium"
+                            font.pixelSize: 15
+                            color: "Blue"
+                            anchors.top: parent.bottom
+
+                            MouseArea
+                            {
+                                id: exp3a
+                                anchors.fill: parent
+                                propagateComposedEvents: true
+                                hoverEnabled: true
+                                acceptedButtons: Qt.LeftButton
+                                cursorShape: Qt.PointingHandCursor
+
+                                //just to check if the home button is clicked
+                                onClicked:
+                                {
+                                    Qt.openUrlExternally("https://www.behance.net/kaustuvpokharel3")
+                                }
+
+                                onEntered: {
+                                    cre3.color = "#313131";
+                                }
+
+                                onExited: {
+                                    cre3.color = "Blue";
+                                }
+                            }
+                        }
                     }
                 }
 
@@ -1066,6 +1171,41 @@ Page
                         color: "#313131"
                         anchors.top: parent.bottom
                         opacity: 0.7
+
+                        Text
+                        {
+                            id: cre4
+                            text: qsTr("<html>View Credentials</html>")
+                            font.family: "Poppins"
+                            font.styleName: "Medium"
+                            font.pixelSize: 15
+                            color: "Blue"
+                            anchors.top: parent.bottom
+
+                            MouseArea
+                            {
+                                id: exp4a
+                                anchors.fill: parent
+                                propagateComposedEvents: true
+                                hoverEnabled: true
+                                acceptedButtons: Qt.LeftButton
+                                cursorShape: Qt.PointingHandCursor
+
+                                //just to check if the home button is clicked
+                                onClicked:
+                                {
+                                    Qt.openUrlExternally("https://drive.google.com/file/d/10FgvkmoQ_Dc8Rjrpp9H7203gPLGLuOVB/view?usp=sharing")
+                                }
+
+                                onEntered: {
+                                    cre4.color = "#313131";
+                                }
+
+                                onExited: {
+                                    cre4.color = "Blue";
+                                }
+                            }
+                        }
                     }
                 }
 
