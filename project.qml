@@ -1338,9 +1338,12 @@ Page
                             Layout.alignment: Qt.AlignLeft | Qt.AlignTop
                             Layout.topMargin: -40
                             Layout.leftMargin: 50
+
+
                         }
 
-                        Text {
+                        Text
+                        {
                             id: navHome
                             text: qsTr("Home")
                             font.family: "Poppins"
@@ -1351,9 +1354,36 @@ Page
                             Layout.leftMargin: 50
                             Layout.topMargin: 10
                             opacity: 0.7
+
+                            MouseArea
+                            {
+                                id: naHome
+                                anchors.fill: parent
+                                propagateComposedEvents: true
+                                hoverEnabled: true
+                                acceptedButtons: Qt.LeftButton
+                                cursorShape: Qt.PointingHandCursor
+
+                                //just to check if the home button is clicked
+                                onClicked:
+                                {
+                                    loader.push("qrc:/WEBSITE/home.qml")
+                                    console.log("About button clicked: Test case")
+                                }
+                                onEntered: {
+                                    navHome.color = "#628935";
+                                    navHome.font.styleName = "Medium";
+                                }
+
+                                onExited: {
+                                    navHome.color = "#FFFFFF";
+                                    navHome.font.styleName = "Light";
+                                }
+                            }
                         }
 
-                        Text {
+                        Text
+                        {
                             id: navAbout
                             text: qsTr("About")
                             font.family: "Poppins"
@@ -1364,6 +1394,31 @@ Page
                             Layout.leftMargin: 50
                             Layout.topMargin: 10
                             opacity: 0.7
+
+                            MouseArea
+                            {
+                                id: naAbout
+                                anchors.fill: parent
+                                propagateComposedEvents: true
+                                hoverEnabled: true
+                                acceptedButtons: Qt.LeftButton
+                                cursorShape: Qt.PointingHandCursor
+
+                                onClicked:
+                                {
+                                    loader.push("qrc:/WEBSITE/about.qml")
+                                    console.log("About button clicked: Test case")
+                                }
+                                onEntered: {
+                                    navAbout.color = "#628935";
+                                    navHome.font.styleName = "Medium";
+                                }
+
+                                onExited: {
+                                    navAbout.color = "#FFFFFF";
+                                    navAbout.font.styleName = "Light";
+                                }
+                            }
                         }
 
                         Text {
@@ -1377,6 +1432,31 @@ Page
                             Layout.leftMargin: 50
                             Layout.topMargin: 10
                             opacity: 0.7
+
+                            MouseArea
+                            {
+                                id: naResume
+                                anchors.fill: parent
+                                propagateComposedEvents: true
+                                hoverEnabled: true
+                                acceptedButtons: Qt.LeftButton
+                                cursorShape: Qt.PointingHandCursor
+
+                                onClicked:
+                                {
+                                    loader.push("qrc:/WEBSITE/resume.qml")
+                                    console.log("About button clicked: Test case")
+                                }
+                                onEntered: {
+                                    navResume.color = "#628935";
+                                    navResume.font.styleName = "Medium";
+                                }
+
+                                onExited: {
+                                    navResume.color = "#FFFFFF";
+                                    navResume.font.styleName = "Light";
+                                }
+                            }
                         }
 
                         Text {
@@ -1390,6 +1470,31 @@ Page
                             Layout.leftMargin: 50
                             Layout.topMargin: 10
                             opacity: 0.7
+
+                            MouseArea
+                            {
+                                id: naProject
+                                anchors.fill: parent
+                                propagateComposedEvents: true
+                                hoverEnabled: true
+                                acceptedButtons: Qt.LeftButton
+                                cursorShape: Qt.PointingHandCursor
+
+                                onClicked:
+                                {
+                                    //loader.push("qrc:/WEBSITE/project.qml")
+                                    console.log("About button clicked: Test case")
+                                }
+                                onEntered: {
+                                    navProject.color = "#628935";
+                                    navProject.font.styleName = "Medium";
+                                }
+
+                                onExited: {
+                                    navProject.color = "#FFFFFF";
+                                    navProject.font.styleName = "Light";
+                                }
+                            }
                         }
                     }
 
