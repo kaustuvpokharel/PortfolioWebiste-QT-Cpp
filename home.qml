@@ -1603,7 +1603,8 @@ Page
                 }
             }
         }
-        onHeightChanged: {
+        onHeightChanged:
+        {
             var maxContentY = Math.max(0, contentHeight - height);
             contentY = Math.min(contentY, maxContentY);
 

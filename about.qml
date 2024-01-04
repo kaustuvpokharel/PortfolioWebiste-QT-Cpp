@@ -1966,11 +1966,12 @@ Page
             }
         }
 
-        onHeightChanged: {
+        onHeightChanged:
+        {
             var maxContentY = Math.max(0, contentHeight - height);
             contentY = Math.min(contentY, maxContentY);
 
             contentHeight = Math.max(footer.y + footer.height - 100, height);
-            }
+        }
     }
 }
