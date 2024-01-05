@@ -187,8 +187,11 @@ Page
                     acceptedButtons: Qt.LeftButton
                     cursorShape: Qt.PointingHandCursor
 
-                    /loader.push("qrc:/WEBSITE/project.qml")
-                    onClicked: console.log("Project button clicked: Test case")
+                    onClicked:
+                    {
+                        loader.push("qrc:/WEBSITE/project.qml")
+                        console.log("Resume button clicked: Test case")
+                    }
 
                     onEntered: {
                         projectN.color = "#628935";

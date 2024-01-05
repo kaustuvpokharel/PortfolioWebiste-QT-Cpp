@@ -7,8 +7,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 
-find_package(Qt6 6.2 COMPONENTS Quick REQUIRED)
-find_package(Qt6 REQUIRED COMPONENTS Pdf)
+find_package(Qt6 6.2 REQUIRED COMPONENTS Core Gui Quick Pdf)
+
 
 qt_add_executable(appWEBSITE
     main.cpp
