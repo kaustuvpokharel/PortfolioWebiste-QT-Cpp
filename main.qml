@@ -2,6 +2,7 @@ import QtQuick
 import QtQuick.Controls
 
 Window {
+    id: main
     width: 1920
     height: 2000
     visible: true

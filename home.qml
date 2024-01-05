@@ -247,7 +247,7 @@ Page
                 {
                     label1.color = "Transparent"
                     label1.border.color = "#313131";
-                    label1Text.color = "#628935";
+                    label1Text.color = "#313131";
 
                 }
             }

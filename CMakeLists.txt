@@ -8,6 +8,7 @@ set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 
 find_package(Qt6 6.2 COMPONENTS Quick REQUIRED)
+find_package(Qt6 REQUIRED COMPONENTS Pdf)
 
 qt_add_executable(appWEBSITE
     main.cpp
@@ -39,6 +40,7 @@ set_target_properties(appWEBSITE PROPERTIES
 
 target_link_libraries(appWEBSITE
     PRIVATE Qt6::Quick
+    PRIVATE Qt6::Pdf
 )
 
 include(GNUInstallDirs)
