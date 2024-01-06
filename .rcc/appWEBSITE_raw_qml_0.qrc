@@ -1,0 +1,13 @@
+<RCC>
+  <qresource prefix="/WEBSITE/">
+    <file alias="main.qml">/Users/kaustuvpokharel/Documents/Wbsite/WEBSITE/main.qml</file>
+    <file alias="home.qml">/Users/kaustuvpokharel/Documents/Wbsite/WEBSITE/home.qml</file>
+    <file alias="about.qml">/Users/kaustuvpokharel/Documents/Wbsite/WEBSITE/about.qml</file>
+    <file alias="resume.qml">/Users/kaustuvpokharel/Documents/Wbsite/WEBSITE/resume.qml</file>
+    <file alias="project.qml">/Users/kaustuvpokharel/Documents/Wbsite/WEBSITE/project.qml</file>
+    <file alias="Fonts.qrc">/Users/kaustuvpokharel/Documents/Wbsite/WEBSITE/Fonts.qrc</file>
+    <file alias="img.qrc">/Users/kaustuvpokharel/Documents/Wbsite/WEBSITE/img.qrc</file>
+    <file alias="pImg.qrc">/Users/kaustuvpokharel/Documents/Wbsite/WEBSITE/pImg.qrc</file>
+  </qresource>
+</RCC>
+

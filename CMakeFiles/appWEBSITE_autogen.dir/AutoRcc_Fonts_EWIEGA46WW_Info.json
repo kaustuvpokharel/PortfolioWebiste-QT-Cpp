@@ -1,0 +1,27 @@
+{
+	"BUILD_DIR" : "/Users/kaustuvpokharel/Documents/Wbsite/build-WEBSITE-WebAssembly_Qt_6_6_1_multi_threaded-Debug/appWEBSITE_autogen",
+	"CMAKE_BINARY_DIR" : "/Users/kaustuvpokharel/Documents/Wbsite/build-WEBSITE-WebAssembly_Qt_6_6_1_multi_threaded-Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "/Users/kaustuvpokharel/Documents/Wbsite/build-WEBSITE-WebAssembly_Qt_6_6_1_multi_threaded-Debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/Users/kaustuvpokharel/Documents/Wbsite/WEBSITE",
+	"CMAKE_SOURCE_DIR" : "/Users/kaustuvpokharel/Documents/Wbsite/WEBSITE",
+	"INCLUDE_DIR" : "/Users/kaustuvpokharel/Documents/Wbsite/build-WEBSITE-WebAssembly_Qt_6_6_1_multi_threaded-Debug/appWEBSITE_autogen/include",
+	"INPUTS" : 
+	[
+		"/Users/kaustuvpokharel/Documents/Wbsite/WEBSITE/project.qml",
+		"/Users/kaustuvpokharel/Documents/Wbsite/WEBSITE/about.qml",
+		"/Users/kaustuvpokharel/Documents/Wbsite/WEBSITE/TheNautigal-Bold.ttf",
+		"/Users/kaustuvpokharel/Documents/Wbsite/WEBSITE/Philosopher-Regular.ttf",
+		"/Users/kaustuvpokharel/Documents/Wbsite/WEBSITE/Philosopher-Bold.ttf",
+		"/Users/kaustuvpokharel/Documents/Wbsite/WEBSITE/resume.qml"
+	],
+	"LOCK_FILE" : "/Users/kaustuvpokharel/Documents/Wbsite/build-WEBSITE-WebAssembly_Qt_6_6_1_multi_threaded-Debug/CMakeFiles/appWEBSITE_autogen.dir/AutoRcc_Fonts_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "Fonts" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_Fonts.cpp",
+	"RCC_EXECUTABLE" : "/Users/kaustuvpokharel/Qt/6.6.1/macos/./libexec/rcc",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "/Users/kaustuvpokharel/Documents/Wbsite/build-WEBSITE-WebAssembly_Qt_6_6_1_multi_threaded-Debug/CMakeFiles/appWEBSITE_autogen.dir/AutoRcc_Fonts_EWIEGA46WW_Used.txt",
+	"SOURCE" : "/Users/kaustuvpokharel/Documents/Wbsite/WEBSITE/Fonts.qrc",
+	"VERBOSITY" : 0
+}

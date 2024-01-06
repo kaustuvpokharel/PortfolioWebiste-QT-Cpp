@@ -1,0 +1,4 @@
+module WEBSITE
+typeinfo appWEBSITE.qmltypes
+prefer :/WEBSITE/
+

@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/">
+        <file alias="kastuv">IMG_0149.png</file>
+        <file alias="stars">Asset 1.svg</file>
+        <file alias="greenCic">greeenCic</file>
+        <file alias="grayCic">grayCic</file>
+        <file>behanceIcon.svg</file>
+        <file>githubIcon.svg</file>
+        <file>instaIcon.svg</file>
+        <file>linkedinIcon.svg</file>
+        <file>ytIcon.svg</file>
+        <file>ResumeKP.pdf</file>
+        <file alias="main">Main (1).gif</file>
+    </qresource>
+</RCC>

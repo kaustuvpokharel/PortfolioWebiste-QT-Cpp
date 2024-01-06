@@ -1,0 +1,218 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/Users/kaustuvpokharel/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.27/Modules/CMakeDetermineSystem.cmake:206 (message)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      The target system is: Emscripten - 1 - x86
+      The host system is: Darwin - 23.1.0 - arm64
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Users/kaustuvpokharel/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/Users/kaustuvpokharel/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.27/Modules/CheckCXXSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/Users/kaustuvpokharel/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.27/Modules/FindThreads.cmake:99 (CHECK_CXX_SOURCE_COMPILES)"
+      - "/Users/kaustuvpokharel/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.27/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "/Users/kaustuvpokharel/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/Users/kaustuvpokharel/Qt/6.6.1/wasm_multithread/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:36 (find_dependency)"
+      - "/Users/kaustuvpokharel/Qt/6.6.1/wasm_multithread/lib/cmake/Qt6/Qt6Dependencies.cmake:24 (_qt_internal_find_third_party_dependencies)"
+      - "/Users/kaustuvpokharel/Qt/6.6.1/wasm_multithread/lib/cmake/Qt6/Qt6Config.cmake:111 (include)"
+      - "CMakeLists.txt:10 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/Users/kaustuvpokharel/Documents/Wbsite/build-WEBSITE-WebAssembly_Qt_6_6_1_multi_threaded-Debug/CMakeFiles/CMakeScratch/TryCompile-4gP2wR"
+      binary: "/Users/kaustuvpokharel/Documents/Wbsite/build-WEBSITE-WebAssembly_Qt_6_6_1_multi_threaded-Debug/CMakeFiles/CMakeScratch/TryCompile-4gP2wR"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/kaustuvpokharel/Qt/6.6.1/wasm_multithread/lib/cmake/Qt6/platforms;/Users/kaustuvpokharel/Qt/6.6.1/wasm_multithread/lib/cmake/Qt6/platforms;/Users/kaustuvpokharel/Qt/Emscripten/emsdk/upstream/emscripten/cmake/Modules;/Users/kaustuvpokharel/Qt/Emscripten/emsdk/upstream/emscripten/cmake/Modules;/Users/kaustuvpokharel/Qt/Emscripten/emsdk/upstream/emscripten/cmake/Modules;/Users/kaustuvpokharel/Qt/Emscripten/emsdk/upstream/emscripten/cmake/Modules;/Users/kaustuvpokharel/Qt/6.6.1/wasm_multithread/lib/cmake/Qt6;/Users/kaustuvpokharel/Qt/6.6.1/wasm_multithread/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/Users/kaustuvpokharel/Qt/6.6.1/wasm_multithread/lib/cmake/Qt6/3rdparty/kwin"
+      QT_ADDITIONAL_PACKAGES_PREFIX_PATH: ""
+      QT_CHAINLOAD_TOOLCHAIN_FILE: ""
+      QT_TOOLCHAIN_INCLUDE_FILE: ""
+      QT_TOOLCHAIN_RELOCATABLE_CMAKE_DIR: "/Users/kaustuvpokharel/Qt/6.6.1/wasm_multithread/lib/cmake"
+      QT_TOOLCHAIN_RELOCATABLE_PREFIX: ""
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/kaustuvpokharel/Documents/Wbsite/build-WEBSITE-WebAssembly_Qt_6_6_1_multi_threaded-Debug/CMakeFiles/CMakeScratch/TryCompile-4gP2wR'
+        
+        Run Build Command(s): /Users/kaustuvpokharel/Qt/Tools/Ninja/ninja -v cmTC_2f572
+        [1/2] /Users/kaustuvpokharel/Qt/Emscripten/emsdk/upstream/emscripten/em++ -DCMAKE_HAVE_LIBC_PTHREAD  -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_2f572.dir/src.cxx.o -MF CMakeFiles/cmTC_2f572.dir/src.cxx.o.d -o CMakeFiles/cmTC_2f572.dir/src.cxx.o -c /Users/kaustuvpokharel/Documents/Wbsite/build-WEBSITE-WebAssembly_Qt_6_6_1_multi_threaded-Debug/CMakeFiles/CMakeScratch/TryCompile-4gP2wR/src.cxx
+        [2/2] : && /Users/kaustuvpokharel/Qt/Emscripten/emsdk/upstream/emscripten/em++   CMakeFiles/cmTC_2f572.dir/src.cxx.o -o cmTC_2f572.js   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Users/kaustuvpokharel/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/Users/kaustuvpokharel/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.27/Modules/CheckCXXSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/Users/kaustuvpokharel/Qt/6.6.1/wasm_multithread/lib/cmake/Qt6/FindWrapAtomic.cmake:36 (check_cxx_source_compiles)"
+      - "/Users/kaustuvpokharel/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/Users/kaustuvpokharel/Qt/6.6.1/wasm_multithread/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:36 (find_dependency)"
+      - "/Users/kaustuvpokharel/Qt/6.6.1/wasm_multithread/lib/cmake/Qt6Core/Qt6CoreDependencies.cmake:30 (_qt_internal_find_third_party_dependencies)"
+      - "/Users/kaustuvpokharel/Qt/6.6.1/wasm_multithread/lib/cmake/Qt6Core/Qt6CoreConfig.cmake:41 (include)"
+      - "/Users/kaustuvpokharel/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/Users/kaustuvpokharel/Qt/6.6.1/wasm_multithread/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:111 (find_dependency)"
+      - "/Users/kaustuvpokharel/Qt/6.6.1/wasm_multithread/lib/cmake/Qt6Quick/Qt6QuickDependencies.cmake:39 (_qt_internal_find_qt_dependencies)"
+      - "/Users/kaustuvpokharel/Qt/6.6.1/wasm_multithread/lib/cmake/Qt6Quick/Qt6QuickConfig.cmake:40 (include)"
+      - "/Users/kaustuvpokharel/Qt/6.6.1/wasm_multithread/lib/cmake/Qt6/Qt6Config.cmake:156 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    checks:
+      - "Performing Test HAVE_STDATOMIC"
+    directories:
+      source: "/Users/kaustuvpokharel/Documents/Wbsite/build-WEBSITE-WebAssembly_Qt_6_6_1_multi_threaded-Debug/CMakeFiles/CMakeScratch/TryCompile-jTNkzC"
+      binary: "/Users/kaustuvpokharel/Documents/Wbsite/build-WEBSITE-WebAssembly_Qt_6_6_1_multi_threaded-Debug/CMakeFiles/CMakeScratch/TryCompile-jTNkzC"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/kaustuvpokharel/Qt/6.6.1/wasm_multithread/lib/cmake/Qt6/platforms;/Users/kaustuvpokharel/Qt/6.6.1/wasm_multithread/lib/cmake/Qt6/platforms;/Users/kaustuvpokharel/Qt/Emscripten/emsdk/upstream/emscripten/cmake/Modules;/Users/kaustuvpokharel/Qt/Emscripten/emsdk/upstream/emscripten/cmake/Modules;/Users/kaustuvpokharel/Qt/Emscripten/emsdk/upstream/emscripten/cmake/Modules;/Users/kaustuvpokharel/Qt/Emscripten/emsdk/upstream/emscripten/cmake/Modules;/Users/kaustuvpokharel/Qt/6.6.1/wasm_multithread/lib/cmake/Qt6;/Users/kaustuvpokharel/Qt/6.6.1/wasm_multithread/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/Users/kaustuvpokharel/Qt/6.6.1/wasm_multithread/lib/cmake/Qt6/3rdparty/kwin"
+      QT_ADDITIONAL_PACKAGES_PREFIX_PATH: ""
+      QT_CHAINLOAD_TOOLCHAIN_FILE: ""
+      QT_TOOLCHAIN_INCLUDE_FILE: ""
+      QT_TOOLCHAIN_RELOCATABLE_CMAKE_DIR: "/Users/kaustuvpokharel/Qt/6.6.1/wasm_multithread/lib/cmake"
+      QT_TOOLCHAIN_RELOCATABLE_PREFIX: ""
+    buildResult:
+      variable: "HAVE_STDATOMIC"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/kaustuvpokharel/Documents/Wbsite/build-WEBSITE-WebAssembly_Qt_6_6_1_multi_threaded-Debug/CMakeFiles/CMakeScratch/TryCompile-jTNkzC'
+        
+        Run Build Command(s): /Users/kaustuvpokharel/Qt/Tools/Ninja/ninja -v cmTC_473f8
+        [1/2] /Users/kaustuvpokharel/Qt/Emscripten/emsdk/upstream/emscripten/em++ -DHAVE_STDATOMIC  -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_473f8.dir/src.cxx.o -MF CMakeFiles/cmTC_473f8.dir/src.cxx.o.d -o CMakeFiles/cmTC_473f8.dir/src.cxx.o -c /Users/kaustuvpokharel/Documents/Wbsite/build-WEBSITE-WebAssembly_Qt_6_6_1_multi_threaded-Debug/CMakeFiles/CMakeScratch/TryCompile-jTNkzC/src.cxx
+        [2/2] : && /Users/kaustuvpokharel/Qt/Emscripten/emsdk/upstream/emscripten/em++   CMakeFiles/cmTC_473f8.dir/src.cxx.o -o cmTC_473f8.js   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Users/kaustuvpokharel/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/Users/kaustuvpokharel/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.27/Modules/CheckCXXSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/Users/kaustuvpokharel/Qt/6.6.1/wasm_multithread/lib/cmake/Qt6/FindWrapRt.cmake:23 (check_cxx_source_compiles)"
+      - "/Users/kaustuvpokharel/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/Users/kaustuvpokharel/Qt/6.6.1/wasm_multithread/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:36 (find_dependency)"
+      - "/Users/kaustuvpokharel/Qt/6.6.1/wasm_multithread/lib/cmake/Qt6Core/Qt6CoreDependencies.cmake:30 (_qt_internal_find_third_party_dependencies)"
+      - "/Users/kaustuvpokharel/Qt/6.6.1/wasm_multithread/lib/cmake/Qt6Core/Qt6CoreConfig.cmake:41 (include)"
+      - "/Users/kaustuvpokharel/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/Users/kaustuvpokharel/Qt/6.6.1/wasm_multithread/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:111 (find_dependency)"
+      - "/Users/kaustuvpokharel/Qt/6.6.1/wasm_multithread/lib/cmake/Qt6Quick/Qt6QuickDependencies.cmake:39 (_qt_internal_find_qt_dependencies)"
+      - "/Users/kaustuvpokharel/Qt/6.6.1/wasm_multithread/lib/cmake/Qt6Quick/Qt6QuickConfig.cmake:40 (include)"
+      - "/Users/kaustuvpokharel/Qt/6.6.1/wasm_multithread/lib/cmake/Qt6/Qt6Config.cmake:156 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    checks:
+      - "Performing Test HAVE_GETTIME"
+    directories:
+      source: "/Users/kaustuvpokharel/Documents/Wbsite/build-WEBSITE-WebAssembly_Qt_6_6_1_multi_threaded-Debug/CMakeFiles/CMakeScratch/TryCompile-scyJe7"
+      binary: "/Users/kaustuvpokharel/Documents/Wbsite/build-WEBSITE-WebAssembly_Qt_6_6_1_multi_threaded-Debug/CMakeFiles/CMakeScratch/TryCompile-scyJe7"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/kaustuvpokharel/Qt/6.6.1/wasm_multithread/lib/cmake/Qt6/platforms;/Users/kaustuvpokharel/Qt/6.6.1/wasm_multithread/lib/cmake/Qt6/platforms;/Users/kaustuvpokharel/Qt/Emscripten/emsdk/upstream/emscripten/cmake/Modules;/Users/kaustuvpokharel/Qt/Emscripten/emsdk/upstream/emscripten/cmake/Modules;/Users/kaustuvpokharel/Qt/Emscripten/emsdk/upstream/emscripten/cmake/Modules;/Users/kaustuvpokharel/Qt/Emscripten/emsdk/upstream/emscripten/cmake/Modules;/Users/kaustuvpokharel/Qt/6.6.1/wasm_multithread/lib/cmake/Qt6;/Users/kaustuvpokharel/Qt/6.6.1/wasm_multithread/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/Users/kaustuvpokharel/Qt/6.6.1/wasm_multithread/lib/cmake/Qt6/3rdparty/kwin"
+      QT_ADDITIONAL_PACKAGES_PREFIX_PATH: ""
+      QT_CHAINLOAD_TOOLCHAIN_FILE: ""
+      QT_TOOLCHAIN_INCLUDE_FILE: ""
+      QT_TOOLCHAIN_RELOCATABLE_CMAKE_DIR: "/Users/kaustuvpokharel/Qt/6.6.1/wasm_multithread/lib/cmake"
+      QT_TOOLCHAIN_RELOCATABLE_PREFIX: ""
+    buildResult:
+      variable: "HAVE_GETTIME"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/kaustuvpokharel/Documents/Wbsite/build-WEBSITE-WebAssembly_Qt_6_6_1_multi_threaded-Debug/CMakeFiles/CMakeScratch/TryCompile-scyJe7'
+        
+        Run Build Command(s): /Users/kaustuvpokharel/Qt/Tools/Ninja/ninja -v cmTC_1d996
+        [1/2] /Users/kaustuvpokharel/Qt/Emscripten/emsdk/upstream/emscripten/em++ -DHAVE_GETTIME  -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_1d996.dir/src.cxx.o -MF CMakeFiles/cmTC_1d996.dir/src.cxx.o.d -o CMakeFiles/cmTC_1d996.dir/src.cxx.o -c /Users/kaustuvpokharel/Documents/Wbsite/build-WEBSITE-WebAssembly_Qt_6_6_1_multi_threaded-Debug/CMakeFiles/CMakeScratch/TryCompile-scyJe7/src.cxx
+        [2/2] : && /Users/kaustuvpokharel/Qt/Emscripten/emsdk/upstream/emscripten/em++   CMakeFiles/cmTC_1d996.dir/src.cxx.o -o cmTC_1d996.js   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Users/kaustuvpokharel/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/Users/kaustuvpokharel/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.27/Modules/CheckCXXSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/Users/kaustuvpokharel/Qt/6.6.1/wasm_multithread/lib/cmake/Qt6/FindWrapRt.cmake:34 (check_cxx_source_compiles)"
+      - "/Users/kaustuvpokharel/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/Users/kaustuvpokharel/Qt/6.6.1/wasm_multithread/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:36 (find_dependency)"
+      - "/Users/kaustuvpokharel/Qt/6.6.1/wasm_multithread/lib/cmake/Qt6Core/Qt6CoreDependencies.cmake:30 (_qt_internal_find_third_party_dependencies)"
+      - "/Users/kaustuvpokharel/Qt/6.6.1/wasm_multithread/lib/cmake/Qt6Core/Qt6CoreConfig.cmake:41 (include)"
+      - "/Users/kaustuvpokharel/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/Users/kaustuvpokharel/Qt/6.6.1/wasm_multithread/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:111 (find_dependency)"
+      - "/Users/kaustuvpokharel/Qt/6.6.1/wasm_multithread/lib/cmake/Qt6Quick/Qt6QuickDependencies.cmake:39 (_qt_internal_find_qt_dependencies)"
+      - "/Users/kaustuvpokharel/Qt/6.6.1/wasm_multithread/lib/cmake/Qt6Quick/Qt6QuickConfig.cmake:40 (include)"
+      - "/Users/kaustuvpokharel/Qt/6.6.1/wasm_multithread/lib/cmake/Qt6/Qt6Config.cmake:156 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    checks:
+      - "Performing Test HAVE_SHM_OPEN_SHM_UNLINK"
+    directories:
+      source: "/Users/kaustuvpokharel/Documents/Wbsite/build-WEBSITE-WebAssembly_Qt_6_6_1_multi_threaded-Debug/CMakeFiles/CMakeScratch/TryCompile-yYXB9i"
+      binary: "/Users/kaustuvpokharel/Documents/Wbsite/build-WEBSITE-WebAssembly_Qt_6_6_1_multi_threaded-Debug/CMakeFiles/CMakeScratch/TryCompile-yYXB9i"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/kaustuvpokharel/Qt/6.6.1/wasm_multithread/lib/cmake/Qt6/platforms;/Users/kaustuvpokharel/Qt/6.6.1/wasm_multithread/lib/cmake/Qt6/platforms;/Users/kaustuvpokharel/Qt/Emscripten/emsdk/upstream/emscripten/cmake/Modules;/Users/kaustuvpokharel/Qt/Emscripten/emsdk/upstream/emscripten/cmake/Modules;/Users/kaustuvpokharel/Qt/Emscripten/emsdk/upstream/emscripten/cmake/Modules;/Users/kaustuvpokharel/Qt/Emscripten/emsdk/upstream/emscripten/cmake/Modules;/Users/kaustuvpokharel/Qt/6.6.1/wasm_multithread/lib/cmake/Qt6;/Users/kaustuvpokharel/Qt/6.6.1/wasm_multithread/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/Users/kaustuvpokharel/Qt/6.6.1/wasm_multithread/lib/cmake/Qt6/3rdparty/kwin"
+      QT_ADDITIONAL_PACKAGES_PREFIX_PATH: ""
+      QT_CHAINLOAD_TOOLCHAIN_FILE: ""
+      QT_TOOLCHAIN_INCLUDE_FILE: ""
+      QT_TOOLCHAIN_RELOCATABLE_CMAKE_DIR: "/Users/kaustuvpokharel/Qt/6.6.1/wasm_multithread/lib/cmake"
+      QT_TOOLCHAIN_RELOCATABLE_PREFIX: ""
+    buildResult:
+      variable: "HAVE_SHM_OPEN_SHM_UNLINK"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/kaustuvpokharel/Documents/Wbsite/build-WEBSITE-WebAssembly_Qt_6_6_1_multi_threaded-Debug/CMakeFiles/CMakeScratch/TryCompile-yYXB9i'
+        
+        Run Build Command(s): /Users/kaustuvpokharel/Qt/Tools/Ninja/ninja -v cmTC_0b3dd
+        [1/2] /Users/kaustuvpokharel/Qt/Emscripten/emsdk/upstream/emscripten/em++ -DHAVE_SHM_OPEN_SHM_UNLINK  -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_0b3dd.dir/src.cxx.o -MF CMakeFiles/cmTC_0b3dd.dir/src.cxx.o.d -o CMakeFiles/cmTC_0b3dd.dir/src.cxx.o -c /Users/kaustuvpokharel/Documents/Wbsite/build-WEBSITE-WebAssembly_Qt_6_6_1_multi_threaded-Debug/CMakeFiles/CMakeScratch/TryCompile-yYXB9i/src.cxx
+        [2/2] : && /Users/kaustuvpokharel/Qt/Emscripten/emsdk/upstream/emscripten/em++   CMakeFiles/cmTC_0b3dd.dir/src.cxx.o -o cmTC_0b3dd.js   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Users/kaustuvpokharel/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/Users/kaustuvpokharel/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.27/Modules/CheckCXXSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/Users/kaustuvpokharel/Qt/6.6.1/wasm_multithread/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules/FindEGL.cmake:127 (check_cxx_source_compiles)"
+      - "/Users/kaustuvpokharel/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/Users/kaustuvpokharel/Qt/6.6.1/wasm_multithread/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:36 (find_dependency)"
+      - "/Users/kaustuvpokharel/Qt/6.6.1/wasm_multithread/lib/cmake/Qt6Gui/Qt6GuiDependencies.cmake:30 (_qt_internal_find_third_party_dependencies)"
+      - "/Users/kaustuvpokharel/Qt/6.6.1/wasm_multithread/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake:40 (include)"
+      - "/Users/kaustuvpokharel/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/Users/kaustuvpokharel/Qt/6.6.1/wasm_multithread/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:111 (find_dependency)"
+      - "/Users/kaustuvpokharel/Qt/6.6.1/wasm_multithread/lib/cmake/Qt6Quick/Qt6QuickDependencies.cmake:39 (_qt_internal_find_qt_dependencies)"
+      - "/Users/kaustuvpokharel/Qt/6.6.1/wasm_multithread/lib/cmake/Qt6Quick/Qt6QuickConfig.cmake:40 (include)"
+      - "/Users/kaustuvpokharel/Qt/6.6.1/wasm_multithread/lib/cmake/Qt6/Qt6Config.cmake:156 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    checks:
+      - "Performing Test HAVE_EGL"
+    directories:
+      source: "/Users/kaustuvpokharel/Documents/Wbsite/build-WEBSITE-WebAssembly_Qt_6_6_1_multi_threaded-Debug/CMakeFiles/CMakeScratch/TryCompile-yLsO8z"
+      binary: "/Users/kaustuvpokharel/Documents/Wbsite/build-WEBSITE-WebAssembly_Qt_6_6_1_multi_threaded-Debug/CMakeFiles/CMakeScratch/TryCompile-yLsO8z"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/kaustuvpokharel/Qt/6.6.1/wasm_multithread/lib/cmake/Qt6/platforms;/Users/kaustuvpokharel/Qt/6.6.1/wasm_multithread/lib/cmake/Qt6/platforms;/Users/kaustuvpokharel/Qt/Emscripten/emsdk/upstream/emscripten/cmake/Modules;/Users/kaustuvpokharel/Qt/Emscripten/emsdk/upstream/emscripten/cmake/Modules;/Users/kaustuvpokharel/Qt/Emscripten/emsdk/upstream/emscripten/cmake/Modules;/Users/kaustuvpokharel/Qt/Emscripten/emsdk/upstream/emscripten/cmake/Modules;/Users/kaustuvpokharel/Qt/6.6.1/wasm_multithread/lib/cmake/Qt6;/Users/kaustuvpokharel/Qt/6.6.1/wasm_multithread/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/Users/kaustuvpokharel/Qt/6.6.1/wasm_multithread/lib/cmake/Qt6/3rdparty/kwin"
+      QT_ADDITIONAL_PACKAGES_PREFIX_PATH: ""
+      QT_CHAINLOAD_TOOLCHAIN_FILE: ""
+      QT_TOOLCHAIN_INCLUDE_FILE: ""
+      QT_TOOLCHAIN_RELOCATABLE_CMAKE_DIR: "/Users/kaustuvpokharel/Qt/6.6.1/wasm_multithread/lib/cmake"
+      QT_TOOLCHAIN_RELOCATABLE_PREFIX: ""
+    buildResult:
+      variable: "HAVE_EGL"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/kaustuvpokharel/Documents/Wbsite/build-WEBSITE-WebAssembly_Qt_6_6_1_multi_threaded-Debug/CMakeFiles/CMakeScratch/TryCompile-yLsO8z'
+        
+        Run Build Command(s): /Users/kaustuvpokharel/Qt/Tools/Ninja/ninja -v cmTC_1ffb2
+        [1/2] /Users/kaustuvpokharel/Qt/Emscripten/emsdk/upstream/emscripten/em++ -DHAVE_EGL  -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_1ffb2.dir/src.cxx.o -MF CMakeFiles/cmTC_1ffb2.dir/src.cxx.o.d -o CMakeFiles/cmTC_1ffb2.dir/src.cxx.o -c /Users/kaustuvpokharel/Documents/Wbsite/build-WEBSITE-WebAssembly_Qt_6_6_1_multi_threaded-Debug/CMakeFiles/CMakeScratch/TryCompile-yLsO8z/src.cxx
+        [2/2] : && /Users/kaustuvpokharel/Qt/Emscripten/emsdk/upstream/emscripten/em++   CMakeFiles/cmTC_1ffb2.dir/src.cxx.o -o cmTC_1ffb2.js   && :
+        
+      exitCode: 0
+...

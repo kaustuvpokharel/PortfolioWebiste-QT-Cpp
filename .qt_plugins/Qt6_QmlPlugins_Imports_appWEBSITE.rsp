@@ -1,0 +1,14 @@
+-rootPath
+/Users/kaustuvpokharel/Documents/Wbsite/WEBSITE
+-cmake-output
+-output-file
+/Users/kaustuvpokharel/Documents/Wbsite/build-WEBSITE-WebAssembly_Qt_6_6_1_multi_threaded-Debug/.qt_plugins/Qt6_QmlPlugins_Imports_appWEBSITE.cmake
+-importPath
+/Users/kaustuvpokharel/Documents/Wbsite/build-WEBSITE-WebAssembly_Qt_6_6_1_multi_threaded-Debug/WEBSITE
+-importPath
+/Users/kaustuvpokharel/Documents/Wbsite/build-WEBSITE-WebAssembly_Qt_6_6_1_multi_threaded-Debug
+-importPath
+/Users/kaustuvpokharel/Qt/6.6.1/wasm_multithread/./qml
+-qrcFiles
+/Users/kaustuvpokharel/Documents/Wbsite/build-WEBSITE-WebAssembly_Qt_6_6_1_multi_threaded-Debug/.rcc/qmake_WEBSITE.qrc
+/Users/kaustuvpokharel/Documents/Wbsite/build-WEBSITE-WebAssembly_Qt_6_6_1_multi_threaded-Debug/.rcc/appWEBSITE_raw_qml_0.qrc

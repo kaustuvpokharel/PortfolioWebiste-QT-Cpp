@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file alias="pj1">firewall_2.png</file>
+        <file>pdf_viewer.html</file>
+    </qresource>
+</RCC>

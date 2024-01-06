@@ -1,0 +1,32 @@
+{
+	"BUILD_DIR" : "/Users/kaustuvpokharel/Documents/Wbsite/build-WEBSITE-WebAssembly_Qt_6_6_1_multi_threaded-Debug/appWEBSITE_autogen",
+	"CMAKE_BINARY_DIR" : "/Users/kaustuvpokharel/Documents/Wbsite/build-WEBSITE-WebAssembly_Qt_6_6_1_multi_threaded-Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "/Users/kaustuvpokharel/Documents/Wbsite/build-WEBSITE-WebAssembly_Qt_6_6_1_multi_threaded-Debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/Users/kaustuvpokharel/Documents/Wbsite/WEBSITE",
+	"CMAKE_SOURCE_DIR" : "/Users/kaustuvpokharel/Documents/Wbsite/WEBSITE",
+	"INCLUDE_DIR" : "/Users/kaustuvpokharel/Documents/Wbsite/build-WEBSITE-WebAssembly_Qt_6_6_1_multi_threaded-Debug/appWEBSITE_autogen/include",
+	"INPUTS" : 
+	[
+		"/Users/kaustuvpokharel/Documents/Wbsite/WEBSITE/greeenCic",
+		"/Users/kaustuvpokharel/Documents/Wbsite/WEBSITE/ytIcon.svg",
+		"/Users/kaustuvpokharel/Documents/Wbsite/WEBSITE/githubIcon.svg",
+		"/Users/kaustuvpokharel/Documents/Wbsite/WEBSITE/grayCic",
+		"/Users/kaustuvpokharel/Documents/Wbsite/WEBSITE/ResumeKP.pdf",
+		"/Users/kaustuvpokharel/Documents/Wbsite/WEBSITE/behanceIcon.svg",
+		"/Users/kaustuvpokharel/Documents/Wbsite/WEBSITE/Main (1).gif",
+		"/Users/kaustuvpokharel/Documents/Wbsite/WEBSITE/instaIcon.svg",
+		"/Users/kaustuvpokharel/Documents/Wbsite/WEBSITE/linkedinIcon.svg",
+		"/Users/kaustuvpokharel/Documents/Wbsite/WEBSITE/IMG_0149.png",
+		"/Users/kaustuvpokharel/Documents/Wbsite/WEBSITE/Asset 1.svg"
+	],
+	"LOCK_FILE" : "/Users/kaustuvpokharel/Documents/Wbsite/build-WEBSITE-WebAssembly_Qt_6_6_1_multi_threaded-Debug/CMakeFiles/appWEBSITE_autogen.dir/AutoRcc_img_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "img" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_img.cpp",
+	"RCC_EXECUTABLE" : "/Users/kaustuvpokharel/Qt/6.6.1/macos/./libexec/rcc",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "/Users/kaustuvpokharel/Documents/Wbsite/build-WEBSITE-WebAssembly_Qt_6_6_1_multi_threaded-Debug/CMakeFiles/appWEBSITE_autogen.dir/AutoRcc_img_EWIEGA46WW_Used.txt",
+	"SOURCE" : "/Users/kaustuvpokharel/Documents/Wbsite/WEBSITE/img.qrc",
+	"VERBOSITY" : 0
+}
