@@ -1,6 +1,6 @@
 import QtQuick
 import QtQuick.Controls
-import QtWebView
+import QtQuick.Pdf
 import QtQuick.Layouts
 
 Page
@@ -9,7 +9,7 @@ Page
     background: Rectangle {
         color: "#FFFFFF"
     }
-    //property string pdfResourcePath: "qrc:/ResumeKP.pdf"
+    property string pdfResourcePath: "qrc:/ResumeKP.pdf"
 
     Flickable
     {
@@ -187,8 +187,11 @@ Page
                     acceptedButtons: Qt.LeftButton
                     cursorShape: Qt.PointingHandCursor
 
-                    /loader.push("qrc:/WEBSITE/project.qml")
-                    onClicked: console.log("Project button clicked: Test case")
+                    onClicked:
+                    {
+                        loader.push("qrc:/WEBSITE/project.qml")
+                        console.log("Resume button clicked: Test case")
+                    }
 
                     onEntered: {
                         projectN.color = "#628935";
@@ -205,26 +208,125 @@ Page
 
 
 
-        // PdfDocument {
-        //     id: doc
-        //     source: pdfResourcePath
+        PdfDocument {
+            id: doc
+            source: pdfResourcePath
 
-        //     onStatusChanged: {
-        //         switch (doc.status) {
-        //         case PdfDocument.Loading:
-        //             console.log("PDF is loading...");
-        //             break;
-        //         case PdfDocument.Ready:
-        //             console.log("PDF is ready.");
-        //             break;
-        //         case PdfDocument.Error:
-        //             console.error("Error loading PDF:", doc.errorString);
-        //             break;
-        //         default:
-        //             break;
-        //         }
-        //     }
-        // }
+            onStatusChanged: {
+                switch (doc.status) {
+                case PdfDocument.Loading:
+                    console.log("PDF is loading...");
+                    break;
+                case PdfDocument.Ready:
+                    console.log("PDF is ready.");
+                    break;
+                case PdfDocument.Error:
+                    console.error("Error loading PDF:", doc.errorString);
+                    break;
+                default:
+                    break;
+                }
+            }
+        }
+
+        Rectangle {
+            id: spaceBg
+            color: "#313131"
+            anchors.top: headerBar.bottom
+            anchors.topMargin: 100
+            anchors.horizontalCenter: parent.horizontalCenter
+            width: 1400  // Adjust this value based on your layout needs
+            height: 800  // Adjust this value based on your layout needs
+            radius: 50
+
+            ColumnLayout
+            {
+                anchors.top: parent.top
+                anchors.topMargin: 50
+                anchors.horizontalCenter: parent.horizontalCenter
+                spacing: 20
+
+                RowLayout
+                {
+                    id: myp
+                    spacing: 400
+                    Layout.alignment: Qt.AlignHCenter
+
+                    Text
+                    {
+                        text: qsTr("<html>My <font color='#628935'>Resume</font></html>")
+                        FontLoader
+                        {
+                            id: philo
+                            source: "qrc:/PhiloBold"
+                        }
+                        font.family: philo.name
+                        font.pixelSize: 50
+                        color: "#FFFFFF"
+                    }
+
+                    Text
+                    {
+                        text: qsTr("Discover my resume online, offering a seamless viewing experience.\nFeel free to zoom in, scroll through the details, and download if desired.")
+                        font.family: "Poppins"
+                        font.styleName: "Light"
+                        font.pixelSize: 20
+                        color: "#FFFFFF"
+                        opacity: 0.7
+                    }
+                }
+
+                Rectangle
+                {
+                    id: label1
+                    height: 30
+                    width: 1350
+                    color:"Transparent"
+                    border.color: "#FFFFFF"
+                    border.width: 1
+                    radius: 10
+                    Layout.alignment: Qt.AlignHCenter
+
+                    Text
+                    {
+                        id: label1Text
+                        text: qsTr("Download Resume Pdf")
+                        font.family: "poppins"
+                        font.styleName: "Medium"
+                        font.pixelSize: 15
+                        color: "#FFFFFF"
+                        anchors.centerIn: parent
+                    }
+
+                    MouseArea
+                    {
+                        anchors.fill: parent
+                        acceptedButtons: Qt.LeftButton
+                        cursorShape: Qt.PointingHandCursor
+                        propagateComposedEvents: true
+                        hoverEnabled: true
+                        onClicked:
+                        {
+                            console.log("Clicked Cpp, opening github");
+                            Qt.openUrlExternally("https://github.com/kastuv/PortfolioWebiste-QT-Cpp")
+                        }
+
+                        onEntered:
+                        {
+                            label1.color = "#628935";
+                            label1.border.color = "#628935";
+                            label1Text.color = "#FFFFFF";
+                        }
+                        onExited:
+                        {
+                            label1.color = "Transparent"
+                            label1.border.color = "#FFFFFF";
+                            label1Text.color = "#FFFFFF";
+                        }
+                    }
+                }
+            }
+        }
 
         Rectangle {
             id: space
@@ -234,15 +336,25 @@ Page
             width: 1350  // Adjust this value based on your layout needs
             height: 600  // Adjust this value based on your layout needs
             radius: 50
+            clip: true
 
-            WebView {
-                id: pdfWebView
+            PdfMultiPageView {
+                id: view
                 anchors.fill: parent
-                url: "qrc:/pdf_viewer.html"  // HTML file using PDF.js
+                document: doc
 
-                onLoadingChanged: {
-                    if (loadRequest.status === WebView.LoadSucceededStatus) {
-                        pdfWebView.runJavaScript("loadPDF(':/pdf_viewer.html');");
+                Rectangle {
+                    width: view.pageWidth
+                    height: view.pageHeight
+                    color: "Transparent"
+                    clip: true
+
+
+                    Image {
+                        source: doc.currentPageImage !== undefined ? doc.currentPageImage : ""
+                        fillMode: Image.PreserveAspectFit
+                        anchors.centerIn: parent
+
                     }
                 }
             }

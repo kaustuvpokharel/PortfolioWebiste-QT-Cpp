@@ -23,5 +23,5 @@ set(qml_import_scanner_import_20 "CLASSNAME;QtQuickControls2UniversalStyleImplPl
 set(qml_import_scanner_import_21 "CLASSNAME;QtQuickControls2BasicStyleImplPlugin;LINKTARGET;Qt6::qtquickcontrols2basicstyleimplplugin;NAME;QtQuick.Controls.Basic.impl;PATH;/Users/kaustuvpokharel/Qt/6.6.1/wasm_multithread/qml/QtQuick/Controls/Basic/impl;PLUGIN;qtquickcontrols2basicstyleimplplugin;PREFER;:/qt-project.org/imports/QtQuick/Controls/Basic/impl/;RELATIVEPATH;QtQuick/Controls/Basic/impl;TYPE;module;")
 set(qml_import_scanner_import_22 "CLASSNAME;QmlShapesPlugin;LINKTARGET;Qt6::qmlshapesplugin;NAME;QtQuick.Shapes;PATH;/Users/kaustuvpokharel/Qt/6.6.1/wasm_multithread/qml/QtQuick/Shapes;PLUGIN;qmlshapesplugin;PREFER;:/qt-project.org/imports/QtQuick/Shapes/;RELATIVEPATH;QtQuick/Shapes;TYPE;module;")
 set(qml_import_scanner_import_23 "CLASSNAME;QtQuickLayoutsPlugin;LINKTARGET;Qt6::qquicklayoutsplugin;NAME;QtQuick.Layouts;PATH;/Users/kaustuvpokharel/Qt/6.6.1/wasm_multithread/qml/QtQuick/Layouts;PLUGIN;qquicklayoutsplugin;PLUGINISOPTIONAL;;PREFER;:/qt-project.org/imports/QtQuick/Layouts/;RELATIVEPATH;QtQuick/Layouts;TYPE;module;")
-set(qml_import_scanner_import_24 "NAME;QtWebView;TYPE;module;")
+set(qml_import_scanner_import_24 "NAME;QtQuick.Pdf;TYPE;module;")
 
