@@ -25,7 +25,7 @@ Here is the link to the preview of the work, before being deployed **Open link**
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/yourusername/your-portfolio.git
+    [git clone https://github.com/yourusername/your-portfolio.git](https://github.com/kastuv/PortfolioWebiste-QT-Cpp.git]
     ```
 
 2. Open the project in Qt Creator.
