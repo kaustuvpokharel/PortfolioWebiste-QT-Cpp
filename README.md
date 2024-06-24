@@ -1,3 +1,5 @@
+
+
 # Portfolio Website With QT/QML/C++
 
 This is a portfolio website created using QML/Qt/C++ and deployed via WebAssembly. 
@@ -25,7 +27,7 @@ Here is the link to the preview of the work, before being deployed **Open link**
 1. Clone the repository:
 
     ```bash
-    [git clone https://github.com/yourusername/your-portfolio.git](https://github.com/kastuv/PortfolioWebiste-QT-Cpp.git]
+    [https://github.com/kastuv/PortfolioWebiste-QT-Cpp.git]
     ```
 
 2. Open the project in Qt Creator.
@@ -48,7 +50,7 @@ Here is the link to the preview of the work, before being deployed **Open link**
 
 ## Customization
 
-Feel free to customize the content, styles, and structure of the website to better suit your preferences and showcase your unique identity.
+Feel free to customize the content, styles, and structure of the website to better suit your preferences and for your unique identity.
 
 ## Technologies Used
 
