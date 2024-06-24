@@ -8,7 +8,7 @@ I completed the 1st verison of the site.
 Here is the link to the preview of the work, before being deployed **Open link**;
 [Preview Video](https://youtu.be/EECYd3PjoiY?si=uSPz2bWv6t5ewT-v)
 
-![](screenshots_UI_QML\1.png)
+![Image](screenshots_UI_QML\1.png)
 
 
 ## Features
