@@ -5,8 +5,10 @@
 This is a portfolio website created using QML/Qt/C++ and deployed via WebAssembly. 
 A year ago I had a an idea of building my website with C++, but I didn't know how. I didn't know about Qt or any tools, just the basics of C++. A year later, today,
 I completed the 1st verison of the site. 
-Here is the link to the preview of the work, before being deployed **Open link**;
+Here is the link to the preview of the work, before being deployed;
 
+
+## Click the Image to watch the Preview Video 👇
 [![Watch the preview video](screenshots_UI_QML/1.png)](https://www.youtube.com/watch?v=EECYd3PjoiY)
 
 
