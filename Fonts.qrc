@@ -5,6 +5,5 @@
         <file alias="PhiloBold">Philosopher-Bold.ttf</file>
         <file>about.qml</file>
         <file>resume.qml</file>
-        <file>project.qml</file>
     </qresource>
 </RCC>

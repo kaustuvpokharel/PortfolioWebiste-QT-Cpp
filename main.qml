@@ -6,12 +6,12 @@ Window {
     width: 1920
     height: 2000
     visible: true
-    title: qsTr("PortFolio")
+    title: qsTr("PortFolio " +height +" x "+width)
 
     StackView
     {
         id: loader
         anchors.fill: parent
-        initialItem: "qrc:/WEBSITE/home.qml"
+        initialItem: "qrc:/WEBSITE/UI/pages/home.qml"
     }
 }

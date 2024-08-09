@@ -1,8 +1,15 @@
 import QtQuick 2.15
 import QtQuick.Layouts
+import "../components"
+
+//@author Kaustuv Pokharel
+//Component: Header
+
+
 
 Rectangle {
     id: headerBar
+
     anchors {
         horizontalCenter: parent.horizontalCenter
         top: parent.top
@@ -10,8 +17,8 @@ Rectangle {
     }
 
     color: "#313131"
-    width: parent.width * 0.8
-    height: Math.max(75 * (width / 1200), 30)
+    width: parent.width * 0.9
+    height: Math.max(75 * (width / 1450), 30)
     radius: 50
 
     RowLayout {
@@ -22,10 +29,14 @@ Rectangle {
         Text {
             id: homeN
             text: "Home"
-            color: "#FFFFFF"
-            font.family: "poppins"
-            font.styleName: "Light"
-            font.pixelSize: Math.max(headerBar.width * 0.015, 12)
+            color: "#F2F2F2"
+
+            font
+            {
+                family: "poppins"
+                styleName: "Light"
+                pixelSize: Math.max(headerBar.width * 0.015, 12)
+            }
 
             MouseArea {
                 id: homeHeaderArea
@@ -43,7 +54,7 @@ Rectangle {
                 }
 
                 onExited: {
-                    homeN.color = "#FFFFFF";
+                    homeN.color = "#F2F2F2";
                     homeN.font.styleName = "Light";
                 }
             }
@@ -52,10 +63,14 @@ Rectangle {
         Text {
             id: aboutN
             text: "About"
-            color: "#FFFFFF"
-            font.family: "poppins"
-            font.styleName: "Light"
-            font.pixelSize: Math.max(headerBar.width * 0.015, 12)
+            color: "#F2F2F2"
+
+            font
+            {
+                family: "poppins"
+                styleName: "Light"
+                pixelSize: Math.max(headerBar.width * 0.015, 12)
+            }
 
             MouseArea {
                 id: aboutHeaderArea
@@ -76,7 +91,7 @@ Rectangle {
                 }
 
                 onExited: {
-                    aboutN.color = "#FFFFFF";
+                    aboutN.color = "#F2F2F2";
                     aboutN.font.styleName = "Light";
                 }
             }
@@ -85,23 +100,26 @@ Rectangle {
         Text {
             id: nameLogo
             text: "<span>Kaustuv <font color='#628935'>Pokharel</font></span>"
-            color: "#FFFFFF"
-            FontLoader {
-                id: nautigal
-                source: "qrc:/Nautigal"
-            }
+            color: "#F2F2F2"
 
-            font.family: nautigal.name
-            font.pixelSize: Math.max(headerBar.width / 25, 15)
+            font
+            {
+                family: nautigal.name
+                pixelSize: Math.max(headerBar.width / 25, 15)
+            }
         }
 
         Text {
             id: resumeN
             text: "Resume"
-            color: "#FFFFFF"
-            font.family: "poppins"
-            font.styleName: "Light"
-            font.pixelSize: Math.max(headerBar.width * 0.015, 12)
+            color: "#F2F2F2"
+
+            font
+            {
+                family: "poppins"
+                styleName: "Light"
+                pixelSize: Math.max(headerBar.width * 0.015, 12)
+            }
 
             MouseArea {
                 id: resumeHeaderArea
@@ -122,7 +140,7 @@ Rectangle {
                 }
 
                 onExited: {
-                    resumeN.color = "#FFFFFF";
+                    resumeN.color = "#F2F2F2";
                     resumeN.font.styleName = "Light";
                 }
             }
@@ -131,10 +149,14 @@ Rectangle {
         Text {
             id: projectN
             text: "Project"
-            color: "#FFFFFF"
-            font.family: "poppins"
-            font.styleName: "Light"
-            font.pixelSize: Math.max(headerBar.width * 0.015, 12)
+            color: "#F2F2F2"
+
+            font
+            {
+                family: "poppins"
+                styleName: "Light"
+                pixelSize: Math.max(headerBar.width * 0.015, 12)
+            }
 
             MouseArea {
                 id: projectHeaderArea
@@ -145,7 +167,7 @@ Rectangle {
                 cursorShape: Qt.PointingHandCursor
 
                 onClicked: {
-                    loader.push("qrc:/WEBSITE/project.qml")
+                    loader.push("qrc:/WEBSITE/UI/pages/project.qml")
                     console.log("Project button clicked: Test case")
                 }
 
@@ -155,7 +177,7 @@ Rectangle {
                 }
 
                 onExited: {
-                    projectN.color = "#FFFFFF";
+                    projectN.color = "#F2F2F2";
                     projectN.font.styleName = "Light";
                 }
             }
