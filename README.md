@@ -61,10 +61,6 @@ Feel free to customize the content, styles, and structure of the website to bett
 - QML
 - Qt WebAssembly
 
-## License
-
-This project is licensed under the [MIT License](LICENSE.md).
-
 ## Acknowledgments
 
 Special thanks to the Qt-Group for amazing documentations and Qt-reddit community.
